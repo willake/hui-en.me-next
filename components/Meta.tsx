@@ -29,7 +29,7 @@ const Meta : React.FC<MetaProps> = ({ title, keywords, description}) => {
             <meta charSet='utf-8' />
             <link rel="icon" href="/favicon.ico" />
             <title>{title}</title>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="author" content="Hui En Lin" />
             <meta property="og:title" content={title} />
             <meta property="og:image" content="/images/cover.jpg" />

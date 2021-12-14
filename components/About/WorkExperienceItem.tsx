@@ -18,7 +18,7 @@ const WorkExperienceItem: React.FC<Props> = ({ title, location, period, details 
             <div className={styles.experienceCategoryItemDetail}>
                 {
                     details.map(detail => (
-                      <span>
+                      <span key={detail.length}>
                         - {detail}<br />
                       </span>  
                     ))

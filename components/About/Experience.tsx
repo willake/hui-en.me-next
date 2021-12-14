@@ -22,6 +22,7 @@ const Experience: React.FC<ExperienceProps> = ({ workExperiences, projectExperie
                 <div className={styles.experienceCategoryContent}>
                 {workExperiences.map((experience) => (
                     <WorkExperienceItem
+                        key={experience.title}
                         title={experience.title}
                         location={experience.location}
                         period={experience.period}
@@ -35,6 +36,7 @@ const Experience: React.FC<ExperienceProps> = ({ workExperiences, projectExperie
                 <div className={styles.experienceCategoryContent}>
                     {projectExperiences.map((experience) => (
                         <ProjectExperienceItem
+                            key={experience.title}
                             role={experience.role}
                             title={experience.title}
                             period={experience.period}
@@ -48,6 +50,7 @@ const Experience: React.FC<ExperienceProps> = ({ workExperiences, projectExperie
                 <div className={styles.experienceCategoryContent}>
                     {educations.map((education) => (
                         <EducationItem
+                            key={education.degree}
                             degree={education.degree}
                             school={education.school}
                             period={education.period}

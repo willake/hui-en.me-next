@@ -13,7 +13,7 @@ const Intro: React.FC<IntroProps> = ({intro}) => {
             </div>
             <div className={styles.aboutMeContent}>
                 {intro.map((text) => (
-                    <div className={styles.aboutMeContentItem}>{text}</div>
+                    <div key={text.length} className={styles.aboutMeContentItem}>{text}</div>
                 ))}
             </div>
         </section>
