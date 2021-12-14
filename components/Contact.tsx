@@ -1,4 +1,5 @@
 import styles from '../styles/Contact.module.scss';
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import React from 'react';
 
 const Contact: React.FC = () => {
@@ -13,13 +14,13 @@ const Contact: React.FC = () => {
             <div className={styles.contactEmail}>willakelin@gmail.com</div>
             <div className={styles.contactLinks}>
                 <a title="LinkedIn Contact" className={styles.contactLink} href="https://www.linkedin.com/in/willakelin/">
-                    <i className="contact__link__icon fa fa-linkedin" aria-hidden="true"></i>
+                    <FaLinkedin />
                 </a>
                 <a title="Github Contact" className={styles.contactLink} href="https://github.com/willake">
-                    <i className="contact__link__icon fa fa-github" aria-hidden="true"></i>
+                    <FaGithub />
                 </a>
                 <a title="Twitter Contact" className={styles.contactLink} href="https://twitter.com/WillakeLin">
-                    <i className="contact__link__icon fa fa-twitter" aria-hidden="true"></i>
+                    <FaTwitter />
                 </a>
             </div>
         </section>
