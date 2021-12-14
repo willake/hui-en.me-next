@@ -7,14 +7,16 @@ import Nav from './Nav';
 const Layout: React.FC = ({ children }) => {
 
     return (
-        <div className={styles.container}>
+        <>
             <Nav />
-            <main className={styles.main}>
-                {children}
-            </main>
-            <Contact />
+            <div className={styles.container}>
+                <main className={styles.main}>
+                    {children}
+                </main>
+                <Contact />
+            </div>
             <Footer />
-        </div>
+        </>
     );
 };
 

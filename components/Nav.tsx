@@ -8,7 +8,11 @@ import Menu from './Nav/Menu';
 const Nav: React.FC = () => {
     const [isOpen, setOpen] = useState(false);
 
-    let menu = isOpen ? <Menu/> : <></>;
+    const closeMenu = () => {
+        setOpen(false);
+    }
+
+    let menu = isOpen ? <Menu closeMenu={closeMenu}/> : <></>;
 
     return (
     <nav className={styles.nav}>
@@ -18,26 +22,30 @@ const Nav: React.FC = () => {
             </Link>
         </div>
         <div className={styles.title}>
-            Hui En Lin
+            <h1>Hui En Lin</h1>
         </div>
-        <Hamburger toggled={isOpen} toggle={setOpen} />
-        <ul className={styles.links}>
-            <li>
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/about">
-                    <a>About</a>
-                </Link>
-            </li>
-            <li>    
-                <Link href="/#portfolio">
-                    <a>Portfolio</a>
-                </Link>
-            </li>
-        </ul>
+        <div className={styles.menuButton}>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
+        <div className={styles.links}>
+            <ul>
+                <li>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/about">
+                        <a>About</a>
+                    </Link>
+                </li>
+                <li>    
+                    <Link href="/#portfolio">
+                        <a>Portfolio</a>
+                    </Link>
+                </li>
+            </ul>
+        </div>
         {menu}
     </nav>
     );
