@@ -2,11 +2,13 @@ import styles from '../styles/Layout.module.scss';
 import React from 'react';
 import Footer from './Footer';
 import Contact from './Contact';
+import Nav from './Nav';
 
 const Layout: React.FC = ({ children }) => {
 
     return (
         <div className={styles.container}>
+            <Nav />
             <main className={styles.main}>
                 {children}
             </main>

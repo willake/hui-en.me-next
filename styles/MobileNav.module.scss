@@ -1,66 +1,66 @@
-.nav {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #70a9a1;
-    z-index: 800;
-}
+// .nav {
+//     position: fixed;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     background-color: #70a9a1;
+//     z-index: 800;
+// }
 
-.navMobile {
-    display: block;
+// .navMobile {
+//     display: block;
 
-    @media screen and (min-width: $lg){
-        display: none;
-    }
-}
+//     @media screen and (min-width: $lg){
+//         display: none;
+//     }
+// }
 
-.navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 900;
-    background-color: #70a9a1;
-}
+// .navBar {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     z-index: 900;
+//     background-color: #70a9a1;
+// }
 
-.navLogo {
-    width: 45px;
-    height: 45px;
-    margin: 5px;
-    background-image: url(/images/common_logo.png);
-    background-size: contain;
-}
+// .navLogo {
+//     width: 45px;
+//     height: 45px;
+//     margin: 5px;
+//     background-image: url(/images/common_logo.png);
+//     background-size: contain;
+// }
 
-.navTitle {
-    font-size: 1.8rem;
-}
+// .navTitle {
+//     font-size: 1.8rem;
+// }
 
-.navButton {
-    margin-left: auto;
-    margin-right: 5px;
-}
+// .navButton {
+//     margin-left: auto;
+//     margin-right: 5px;
+// }
 
-.navDropdown {
-    position: absolute;
-    top: 55px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 50;
-    transform: translateY(-250px);
-    transition: 0.2s ease-in;
+// .navDropdown {
+//     position: absolute;
+//     top: 55px;
+//     left: 0;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     z-index: 50;
+//     transform: translateY(-250px);
+//     transition: 0.2s ease-in;
 
-    &.is-active {
-        transform: translateY(0px);
-    }
-}
+//     &.is-active {
+//         transform: translateY(0px);
+//     }
+// }
 
-.navDropdownItem {
-    background-color: #70a9a1;
-    padding: 10px;
-    padding-left: 20px;
-    font-size: 1.6rem;
-    z-index: 50;
-}
+// .navDropdownItem {
+//     background-color: #70a9a1;
+//     padding: 10px;
+//     padding-left: 20px;
+//     font-size: 1.6rem;
+//     z-index: 50;
+// }
