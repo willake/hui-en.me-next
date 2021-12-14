@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.scss';
+import styles from '../../styles/Home.module.scss';
 import React from 'react';
 
 const Header: React.FC = () => {
