@@ -37,3 +37,45 @@
     margin: 10px 0;
     line-height: 25px;
 }
+
+.skill {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $lg){
+        padding: 0 15%;
+    }
+}
+
+.skillCategory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillCategoryTitle {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.skillCategoryContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillCategoryContentItem {
+    width: auto;
+    background: #70a9a1;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 1px 1px 3px #888888;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
