@@ -33,3 +33,24 @@ export type AboutAPIData = {
     projectExperience: Experience[] 
     education: Education[]
 }
+
+export type ProjectMeta = {
+    id: number,
+    title: string,
+    tools: string[],
+}
+
+export type HomeAPIData = {
+    professionalProjects: ProjectMeta[],
+    sideProjects: ProjectMeta[]
+}
+
+export type ProjectArticle = {
+    id: number,
+    title: string,
+    type: string,
+    size: string,
+    language: string,
+    role: string,
+    content: string
+}

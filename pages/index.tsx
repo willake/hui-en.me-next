@@ -1,8 +1,14 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import Meta from '../components/Meta';
 import Header from '../components/Home/Header';
+import { HomeAPIData } from '../schema';
+import { server } from '../config';
 
-const Home: NextPage = () => {
+type HomeProps = {
+  data: HomeAPIData
+}
+
+const Home: NextPage<HomeProps> = ({data}) => {
   return (
     <>
       <Meta 
@@ -15,3 +21,14 @@ const Home: NextPage = () => {
 }
 
 export default Home;
+
+export const getStaticProps: GetStaticProps<HomeAPIData> = async () => {
+  const res = await fetch(`${server}/api/home`);
+  const data = await res.json();
+
+  return {
+      props: {
+          data
+      }
+  }
+}
