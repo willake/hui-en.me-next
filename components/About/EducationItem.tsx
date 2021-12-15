@@ -11,9 +11,9 @@ type Props = {
 const EducationItem: React.FC<Props> = ({ degree, school, period }) => {
 
     return (
-        <div className={styles.experienceCategoryItem}>
-            <div className={styles.experienceCategoryTitle}>{degree}</div>
-            <div className={styles.experienceCategoryDetail}>{`${school}, ${period}`}</div>
+        <div className={styles.experienceCategoryContentItem}>
+            <div className={styles.experienceCategoryContentItemTitle}>{degree}</div>
+            <div className={styles.experienceCategoryContentItemDetail}>{`${school}, ${period}`}</div>
         </div>
     );
 };

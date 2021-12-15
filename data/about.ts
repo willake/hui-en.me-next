@@ -14,46 +14,44 @@ export const data: AboutAPIData = {
     workExperience: [
         {
             title: `Unity Software Engineer`,
-            location: `Seekrtech, Taichung, Taiwan`,
-            period: `Jan. 2019 - June. 2021`,
+            subtitle: `Seekrtech, Taichung, Taiwan, Jan. 2019 - June. 2021`,
             details: [
                 `Worked on a mobile to-do list app with gamification feature in a cross-functional team`,
                 `Implemented all game mechanics in C# with UniRx, designed code architecture and database schema`,
                 `Defined art assets standard, developing level design and UI building tools, improving productivity`,
-                `Executed project in scrum framework, scheduling work accurately`
+                `Executed project in Scrum framework, scheduling work accurately`
             ]
         },
         {
             title: `Front-End Engineer (Internship)`,
-            location: `Seekrtech, Taichung, Taiwan`,
-            period: `Jul. 2017 - Sep. 2017 / Jul. 2018 - Sep. 2018`,
+            subtitle: `Seekrtech, Taichung, Taiwan, Jul. 2017 - Sep. 2017 / Jul. 2018 - Sep. 2018`,
             details: [
-                `Developed several websites for company and products with HTML, CSS and JavaScript`,
-                `Refactored browser extension and developed new features, connecting server APIs`,
-                `Defining static website skeleton for future product webpages`,
-                `Work with seinor programmer to make browser extension comunicate with server`
+                `Developed several websites for company and products with HTML, CSS, and JavaScript`,
+                `Refactored browser extension, developed new features, and connected server APIs, increasing number of 
+                users by 60,000`,
+                `Defined static website skeleton for future product webpages, reducing time for developing a new website`
             ]
         }
     ],
     projectExperience: [
         {
-            role: `Gameplay Programmer`,
-            title: `Hourglass : Project Norn`,
-            period: `Oct. 2017 - May. 2018`,
+            title: `Gameplay Programmer`,
+            subtitle: `Hourglass : Project Norn, Oct. 2017 - May. 2018`,
             details: [
-                `Discussed with game designer to solve problem between designing and programming, improved level design and remove bugs`,
-                `Collaborated with game artist to promote efficiency and make graphic more lively`,
-                `Implemented several significant gameplay features with Unity3D`
+                `Implemented several significant gameplay features such as player movement, item interaction, and boss AI`,
+                `Collaborated with game designer, designing system and keeping it implementable`,
+                `Imported shader effects for visual experience, making graphics more lively`,
+                `Presented game at largest student exhibition in Taiwan, with over 80,000 people visiting`
             ]
         },
         {
-            role: `Game Developer (Contract)`,
-            title: `Pinka`,
-            period: `Jan. 2016 - May. 2017`,
+            title: `Game Developer (Contract)`,
+            subtitle: `Pinka, Jan. 2016 - May. 2017`,
             details: [
-                `Designing game mechanics as a educational game`,
-                `Implemented several significant gameplay feature such as user input, UI, combat system and map generating in C# with Unity`,
-                `Won 1st place in competition, which contained over 20 other projects from 3 different university eligible for rewards`
+                `Designed game mechanics with educational features to teach English vocabulary`,
+                `Implemented several significant gameplay features in C# with Unity, such as user input, UI, combat system, and map generation`,
+                `Won 1st place in educational digital media competition, which contained over 20 other projects from three
+                different universities eligible for rewards`
             ]
         }
     ],

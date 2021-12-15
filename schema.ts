@@ -5,6 +5,12 @@ export type WorkExperience = {
     details: string[]
 }
 
+export type Experience = {
+    title: string,
+    subtitle: string,
+    details: string[]
+}
+
 export type ProjectExperience = {
     role: string,
     title: string,
@@ -23,7 +29,7 @@ export type AboutAPIData = {
     programmingSkill: string[],
     framework: string[],
     knowledge: string[],
-    workExperience: WorkExperience[],
-    projectExperience: ProjectExperience[] 
+    workExperience: Experience[],
+    projectExperience: Experience[] 
     education: Education[]
 }
