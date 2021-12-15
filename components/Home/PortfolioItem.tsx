@@ -11,8 +11,6 @@ type Props = {
 
 const PortfolioItem: React.FC<Props> = ({ meta }) => {
 
-    console.log(meta);
-
     let background = <style>{}</style>
 
     return (

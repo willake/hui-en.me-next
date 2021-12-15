@@ -64,6 +64,7 @@
 }
 
 .portfolio {
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -99,7 +100,7 @@
     position: relative;
     width: 300px;
     height: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     // flex: 1;
 
     @media screen and (min-width: $sm){
@@ -171,7 +172,6 @@
 
 .portfolioItemTitle {
     margin-right: 10px;
-    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -183,7 +183,6 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -194,6 +193,7 @@
     margin: 0 5px;
     letter-spacing: 0.5px;
     text-align: center;
-    font-size: 1.4rem;
     font-weight: 500;
+    justify-content: center;
+    align-items: center;
 }
