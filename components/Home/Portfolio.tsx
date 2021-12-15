@@ -10,7 +10,6 @@ type Props = {
 }
 
 const Portfolio: React.FC<Props> = ({professionals, sides}) => {
-
     return (
         <section id="portfolio" className={styles.portfolio}>
             <PortfolioCategory

@@ -10,16 +10,14 @@ type Props = {
 }
 
 const PortfolioCategory: React.FC<Props> = ({ title, projects }) => {
-
     return (
         <>
             <h2 className={styles.portfolioTitle}>
                 <span className={classNames('l', 'colorBlack')}>{title}</span>
             </h2>
             <div className={styles.portfolioRow}>
-                {projects.map((project) => {
-                    <PortfolioItem meta={project} /> 
-                })}
+                {projects.map((project) => (
+                    <PortfolioItem key={project.id} meta={project} /> ))}
             </div>
         </>
     );

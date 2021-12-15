@@ -19,7 +19,7 @@ const Nav: React.FC = () => {
     <nav className={styles.nav}>
         <div className={classNames(styles.logo, 'hoverable')}>
             <Link href="/">
-                <Image src='/images/logo.svg' alt="logo" layout="fill"/>
+                <a><Image src='/images/logo.svg' alt="logo" layout="fill"/></a>
             </Link>
         </div>
         <div className={styles.title}>
@@ -32,17 +32,17 @@ const Nav: React.FC = () => {
             <ul>
                 <li className={'hoverable'}>
                     <Link href="/">
-                        <a className={classNames('xl', 'colorWhite')}>Home</a>
+                        <a className={classNames('l', 'colorWhite')}>Home</a>
                     </Link>
                 </li>
                 <li className={'hoverable'}>
                     <Link href="/about">
-                        <a className={classNames('xl', 'colorWhite')}>About</a>
+                        <a className={classNames('l', 'colorWhite')}>About</a>
                     </Link>
                 </li>
                 <li className={'hoverable'}>    
                     <Link href="/#portfolio">
-                        <a className={classNames('xl', 'colorWhite')}>Portfolio</a>
+                        <a className={classNames('l', 'colorWhite')}>Portfolio</a>
                     </Link>
                 </li>
             </ul>
