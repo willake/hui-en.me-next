@@ -53,7 +53,7 @@ export const data: HomeAPIData = {
             ]
         },
         {
-            id: 5,
+            id: 6,
             title: "I Just Want to Cook",
             previewImageUrl: "/images/projects/i-just-want-to-cook/preview.jpg",
             tools: [
@@ -61,7 +61,7 @@ export const data: HomeAPIData = {
             ]
         },
         {
-            id: 6,
+            id: 7,
             title: "Secret Triangle",
             previewImageUrl: "/images/projects/secret-triangle/preview.jpg",
             tools: [
@@ -69,7 +69,7 @@ export const data: HomeAPIData = {
             ]
         },
         {
-            id: 7,
+            id: 8,
             title: "Pinka",
             previewImageUrl: "/images/projects/pinka/preview.jpg",
             tools: [
