@@ -20,6 +20,7 @@ const EducationCategory: React.FC<Props> = ({ title, educations }) => {
             <div className={styles.experienceCategoryContent}>
             {educations.map((education) => (
                 <EducationItem 
+                    key={education.degree}
                     degree={education.degree}
                     school={education.school}
                     period={education.period} />

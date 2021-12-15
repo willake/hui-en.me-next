@@ -12,7 +12,7 @@ type Props = {
 const EducationItem: React.FC<Props> = ({ degree, school, period }) => {
 
     return (
-        <div id={degree} className={styles.experienceCategoryContentItem}>
+        <div className={styles.experienceCategoryContentItem}>
             <div className={styles.experienceCategoryContentItemTitle}>
                 <span className={classNames('l', 'colorBlack')}>{degree}</span>
             </div>

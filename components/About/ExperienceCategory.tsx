@@ -20,6 +20,7 @@ const ExperienceCategory: React.FC<Props> = ({ title, experiences }) => {
             <div className={styles.experienceCategoryContent}>
             {experiences.map((experience) => (
                 <ExperienceItem 
+                    key={experience.title}
                     title={experience.title}
                     subtitle={experience.subtitle}
                     details={experience.details} />
