@@ -46,7 +46,7 @@
     justify-content: center;
 
     @media screen and (min-width: $lg){
-        padding: 0 15%;
+        max-width: 1000px;
     }
 }
 
@@ -100,7 +100,7 @@
     justify-content: center;
 
     @media screen and (min-width: $lg){
-        width: 70%;
+        max-width: 1000px;
         flex-direction: row;
         align-items: flex-start;
     }
@@ -117,6 +117,7 @@
 }
 
 .experienceCategoryContent {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

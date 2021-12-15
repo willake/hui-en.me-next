@@ -12,12 +12,12 @@ type Props = {
 const ExperienceItem: React.FC<Props> = ({ title, subtitle, details }) => {
 
     return (
-        <div className={styles.experienceCategoryContentItem}>
+        <div id={title} className={styles.experienceCategoryContentItem}>
             <div className={styles.experienceCategoryContentItemTitle}>
                 <span className={classNames('l', 'colorBlack')}>{title}</span>
             </div>
             <div className={styles.experienceCategoryContentItemSubtitle}>
-                <span className={classNames('m', 'colorGreen')}>{subtitle}</span>
+                <span className={classNames('s', 'colorGreen')}>{subtitle}</span>
             </div>
             <div className={styles.experienceCategoryContentItemDetail}>
                 {
