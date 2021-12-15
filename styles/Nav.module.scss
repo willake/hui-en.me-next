@@ -17,18 +17,13 @@
 
 .logo {
     position: relative;
-
-    @media screen and (min-width: $lg){
-        width: 64px;
-        height: 64px;
-    }
-}
-
-.title {
+    width: 64px;
+    height: 64px;
 }
 
 .links {
     display: none;
+    margin-left: auto;
 
     ul {
         display: flex;
@@ -37,18 +32,18 @@
     
     li {
         list-style-type: none;
-        margin: 0px 10px;
+        margin: 0px 30px;
     }
 
     @media screen and (min-width: $lg){
         display: block;
-        justify-self: flex-end;
     }
 }
 
 .menuButton {
     display: block;
-    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: 10px;
 
     @media screen and (min-width: $lg){
         display: none;
@@ -70,7 +65,8 @@
     height: 100vh;
     top: 0;
     right: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: #70a9a1;
 
     ul {
@@ -80,7 +76,24 @@
     
     li {
         list-style-type: none;
-        margin: 10px 0px;
+        margin: 15px 0px;
         text-align: left;
     }
+}
+
+.menuHeader {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.closeButton {
+    margin: 0 10px;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
 }

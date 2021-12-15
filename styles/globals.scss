@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, Arial, 'PingFang TC', 'Microsoft JhengHei', sans-serif !important;
+  font-size:16px;
 }
 
 a {
@@ -12,4 +13,54 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.xxs {
+  font-size: 0.6rem;
+}
+
+.xs {
+  font-size: 0.75rem;
+}
+
+.s {
+  font-size: 0.8rem;
+}
+
+.l {
+  font-size: 1.1rem;
+}
+
+.xl {
+  font-size: 1.5rem;
+}
+
+.xxl {
+  font-size: 2rem;
+}
+
+.colorWhite {
+  color: whitesmoke;
+}
+
+.colorBlack {
+  color: rgb(20, 20, 20, 1);
+}
+
+.colorGreen {
+  color: #70a9a1;
+}
+
+.colorDarkGreen {
+  color: #0b2027;
+}
+
+.hoverable {
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.2s ease-in;
+
+  &:hover {
+      transform: scale(1.1);
+  }
 }
