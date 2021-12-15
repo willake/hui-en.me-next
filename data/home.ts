@@ -5,6 +5,7 @@ export const data: HomeAPIData = {
         {
             id: 0,
             title: "WaterDo",
+            previewImageUrl: "/images/waterdo/preview.jpg",
             tools: [
                 "Unity", "C#"
             ]
@@ -12,6 +13,7 @@ export const data: HomeAPIData = {
         {
             id: 1,
             title: "Forest Browser Extension",
+            previewImageUrl: "/images/forest-browser/preview.jpg",
             tools: [
                 "Javascript"
             ]
@@ -21,6 +23,7 @@ export const data: HomeAPIData = {
         {
             id: 2,
             title: "Hourglass",
+            previewImageUrl: "/images/hourglass/preview.jpg",
             tools: [
                 "Unity", "C#"
             ]
@@ -28,6 +31,7 @@ export const data: HomeAPIData = {
         {
             id: 3,
             title: "Escape the Room Remake",
+            previewImageUrl: "/images/escape-the-room-remake/preview.jpg",
             tools: [
                 "Unreal", "Blueprint"
             ]
@@ -35,6 +39,7 @@ export const data: HomeAPIData = {
         {
             id: 4,
             title: "Snowball Rage",
+            previewImageUrl: "/images/snowball-rage/preview.jpg",
             tools: [
                 "Unreal", "Blueprint"
             ]
@@ -42,6 +47,7 @@ export const data: HomeAPIData = {
         {
             id: 5,
             title: "Escape the Room",
+            previewImageUrl: "/images/escape-the-room/preview.jpg",
             tools: [
                 "Flash", "ActionScript 3.0"
             ]
@@ -49,6 +55,7 @@ export const data: HomeAPIData = {
         {
             id: 5,
             title: "I Just Want to Cook",
+            previewImageUrl: "/images/i-just-want-to-cook/preview.jpg",
             tools: [
                 "Unity", "C#"
             ]
@@ -56,6 +63,7 @@ export const data: HomeAPIData = {
         {
             id: 6,
             title: "Secret Triangle",
+            previewImageUrl: "/images/secret-triangle/preview.jpg",
             tools: [
                 "Unity", "C#"
             ]
@@ -63,6 +71,7 @@ export const data: HomeAPIData = {
         {
             id: 7,
             title: "Pinka",
+            previewImageUrl: "/images/pinka/preview.jpg",
             tools: [
                 "Unity", "C#"
             ]
