@@ -13,7 +13,7 @@ const PortfolioCategory: React.FC<Props> = ({ title, projects }) => {
     return (
         <>
             <h2 className={styles.portfolioTitle}>
-                <span className={classNames('l', 'colorBlack')}>{title}</span>
+                <span className={classNames('xl', 'colorBlack')}>{title}</span>
             </h2>
             <div className={styles.portfolioRow}>
                 {projects.map((project) => (

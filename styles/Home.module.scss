@@ -75,6 +75,10 @@
     background-color: #EEEEEE;
 }
 
+.portfolioTitle {
+    font-weight: 400;
+}
+
 .portfolioRow {
     display: flex;
     flex-direction: column;
@@ -173,6 +177,10 @@
 .portfolioItemTitle {
     margin-right: 10px;
     font-weight: 500;
+
+    span {
+        display: block;
+    }
 }
 
 .portfolioItemTags {
@@ -196,4 +204,8 @@
     font-weight: 500;
     justify-content: center;
     align-items: center;
+
+    span {
+        display: block;
+    }
 }

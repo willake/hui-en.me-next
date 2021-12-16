@@ -20,7 +20,7 @@ const PortfolioItem: React.FC<Props> = ({ meta }) => {
                     <div className={styles.portfolioItemOverlay}></div>
                     <div className={styles.portfolioItemText}>
                         <h2 className={styles.portfolioItemTitle}>
-                            <span className={classNames('m', 'colorBlack')}>{meta.title}</span>
+                            <span className={classNames('s', 'colorBlack')}>{meta.title}</span>
                         </h2>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const PortfolioItem: React.FC<Props> = ({ meta }) => {
                     {
                         meta.tools.map(tool => (
                             <div key={tool} className={styles.portfolioItemTag}>
-                                <span className={classNames('xs', 'colorWhite')}>{tool}</span>
+                                <span className={classNames('s', 'colorWhite')}>{tool}</span>
                             </div>
                         ))
                     }

@@ -1,5 +1,4 @@
 import React from "react";
-import { ProjectArticle }from "../../schema";
 import styles from "../../styles/project.module.scss";
 import classNames from "classnames";
 
@@ -14,6 +13,7 @@ const About: React.FC<Props> = ({ type, size, language, role }) => {
     return (
         <section className={styles.about}>
             <table className={styles.aboutTable}>
+                <tbody>
                 <tr>
                     <td className={styles.aboutTableItemTitle}>
                         <span className={classNames('m', 'colorGrey')}>Project Type</span>
@@ -46,6 +46,7 @@ const About: React.FC<Props> = ({ type, size, language, role }) => {
                         <span className={classNames('m', 'colorBlack')}>{ role }</span>
                     </td>
                 </tr>
+                </tbody>
             </table>
         </section>
     );
