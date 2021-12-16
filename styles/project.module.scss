@@ -9,3 +9,25 @@
     letter-spacing: 0.5px;
     margin: 50px 0;
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.aboutTable {
+    border: 2px solid;
+    border-color: #383635;
+    border-radius: 2px;
+}
+
+.aboutTableItemTitle {
+    font-weight: 600;
+    padding: 10px;
+}
+
+.aboutTableItemContent {
+    padding: 10px;
+}
