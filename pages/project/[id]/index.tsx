@@ -1,9 +1,9 @@
-import { useRouter } from "next/router";
 import React from "react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { server } from "../../../config";
 import { ProjectArticle }from "../../../schema";
 import Meta from "../../../components/Meta";
+import styles from "../../../styles/project.module.scss";
 
 type Props = {
     projectArticle: ProjectArticle
@@ -16,6 +16,9 @@ const project: NextPage<Props> = ({ projectArticle }) => {
                 title={projectArticle.title}
                 description="avc"
                 keywords="abc"/>
+            <section className={styles.banner}>
+                <div className={styles.bannerTitle}>{ projectArticle.title }</div>
+            </section>
             <div>{ projectArticle.id.toString() }</div>
         </>
     );

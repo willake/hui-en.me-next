@@ -49,6 +49,8 @@ export type HomeAPIData = {
 export type ProjectArticle = {
     id: number,
     title: string,
+    description: string,
+    keywords: string[],
     type: string,
     size: string,
     language: string,
