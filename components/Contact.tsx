@@ -12,7 +12,11 @@ const Contact: React.FC = () => {
                     <span className={classNames('l', 'colorWhite')}>Contact me</span>
                 </a>
             </div>
-            <div className={styles.contactEmail}>willakelin@gmail.com</div>
+            <div className={styles.contactEmail}>
+                <span className={classNames('l', 'colorBlack')}>
+                    willakelin@gmail.com
+                </span>
+            </div>
             <div className={styles.contactLinks}>
                 <a title="LinkedIn Contact" className={styles.contactLink} href="https://www.linkedin.com/in/willakelin/">
                     <FaLinkedin size={32}/>

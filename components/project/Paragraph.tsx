@@ -4,7 +4,7 @@ import styles from "../../styles/project.module.scss";
 
 const Paragraph: React.FC = ({ children }) => {
     return (
-        <p className={classNames(styles.contentParagraph, 'l')}>
+        <p className={classNames(styles.contentParagraph, 'l', 'colorBlack')}>
             {children}
         </p>
     );
