@@ -12,12 +12,12 @@ const SkillSet: React.FC<Props> = ({title, skills}) => {
     return (
     <div className={styles.skillCategory}>
         <h2 className={styles.skillCategoryTitle}>
-            <span className={classNames('l', 'colorBlack')}>{title}</span>
+            <span className={classNames('xl', 'colorBlack')}>{title}</span>
         </h2>
         <div className={styles.skillCategoryContent}>
             {skills.map((skill) => (
                 <div key={skill} className={styles.skillCategoryContentItem}>
-                    <span className={classNames('m', 'colorWhite')}>{skill}</span>
+                    <span className={classNames('l', 'colorWhite')}>{skill}</span>
                 </div>
             ))}
         </div>

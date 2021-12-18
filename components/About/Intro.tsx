@@ -19,7 +19,7 @@ const Intro: React.FC<IntroProps> = ({intro}) => {
             <div className={styles.introTexts}>
                 {intro.map((text) => (
                     <div key={text.length} className={styles.introText}>
-                        <span className={classNames('m', 'colorBlack')}>{text}</span>
+                        <span className={classNames('l', 'colorBlack')}>{text}</span>
                     </div>
                 ))}
             </div>

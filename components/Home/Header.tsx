@@ -27,10 +27,10 @@ const Header: React.FC = () => {
                 </div>
                 <div className={styles.headerTexts}>
                     <h1 className={styles.headerTitle}>
-                        <span className={classNames('xxl', 'colorWhite')}>- Hui En Lin -</span>
+                        <span className={classNames('xxxl', 'colorWhite')}>- Hui En Lin -</span>
                     </h1>
                     <h2 className={styles.headerSubtitle}>
-                        <span className={classNames('xl', 'colorWhite')}>Gameplay Programmer</span>
+                        <span className={classNames('xxl', 'colorWhite')}>Gameplay Programmer</span>
                     </h2>
                 </div>
             </div>
