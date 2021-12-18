@@ -60,7 +60,7 @@ const EscapeTheRoomRemake: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Data oriented programming</Heading>
                 <Paragraph>
-                    It was inspired by a talk in Unity conference, "Unite Austin 2017 - Game Architecture with Scriptable Objects" by Ryan Hipple. 
+                    It was inspired by a talk in Unity conference, &quot;Unite Austin 2017 - Game Architecture with Scriptable Objects&quot; by Ryan Hipple. 
                     It used ScriptableObject, which is a scriptable data object in Unity, as the storage of game state. 
                     All objects in game subscribed states in scriptable objects and reacted when data changed. 
                     I implemented this concept into my UI system, managing and monitoring states such as selecting item and obtained item in an object.
