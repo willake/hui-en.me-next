@@ -7,3 +7,4 @@ Host: https://hui-en.me
 
 # Sitemaps
 Sitemap: https://hui-en.me/sitemap.xml
+Sitemap: https://hui-en.me/server-sitemap.xml
