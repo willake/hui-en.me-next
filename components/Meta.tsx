@@ -6,17 +6,6 @@ interface MetaProps {
     keywords: string,
     description: string
 }
-// cover
-// Global site tag (gtag.js) - Google Analytics
-// <!-- Global site tag (gtag.js) - Google Analytics -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111797252-1"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'UA-111797252-1');
-// </script>
 
 const Meta : React.FC<MetaProps> = ({ title, keywords, description}) => {
     return (
