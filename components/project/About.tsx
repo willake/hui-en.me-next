@@ -16,34 +16,34 @@ const About: React.FC<Props> = ({ type, size, language, role }) => {
                 <tbody>
                 <tr>
                     <td className={styles.aboutTableItemTitle}>
-                        <span className={classNames('m', 'colorGrey')}>Project Type</span>
+                        <span className={classNames('l', 'colorGrey')}>Project Type</span>
                     </td>
                     <td className={styles.aboutTableItemContent}>
-                        <span className={classNames('m', 'colorBlack')}>{ type } Project</span>
+                        <span className={classNames('l', 'colorBlack')}>{ type } Project</span>
                     </td>
                 </tr>
                 <tr>
                     <td className={styles.aboutTableItemTitle}>
-                        <span className={classNames('m', 'colorGrey')}>Team Size</span>
+                        <span className={classNames('l', 'colorGrey')}>Team Size</span>
                     </td>
                     <td className={styles.aboutTableItemContent}>
-                        <span className={classNames('m', 'colorBlack')}>{ size }</span>
+                        <span className={classNames('l', 'colorBlack')}>{ size }</span>
                     </td>
                 </tr>
                 <tr>
                     <td className={styles.aboutTableItemTitle}>
-                        <span className={classNames('m', 'colorGrey')}>Language</span>
+                        <span className={classNames('l', 'colorGrey')}>Language</span>
                     </td>
                     <td className={styles.aboutTableItemContent}>
-                        <span className={classNames('m', 'colorBlack')}>{ language }</span>
+                        <span className={classNames('l', 'colorBlack')}>{ language }</span>
                     </td>
                 </tr>
                 <tr>
                     <td className={styles.aboutTableItemTitle}>
-                        <span className={classNames('m', 'colorGrey')}>Role</span>
+                        <span className={classNames('l', 'colorGrey')}>Role</span>
                     </td>
                     <td className={styles.aboutTableItemContent}>
-                        <span className={classNames('m', 'colorBlack')}>{ role }</span>
+                        <span className={classNames('l', 'colorBlack')}>{ role }</span>
                     </td>
                 </tr>
                 </tbody>

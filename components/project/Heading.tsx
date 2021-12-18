@@ -14,19 +14,19 @@ const Heading: React.FC<Props> = ({ level, children }) => {
     switch(level){
         case 1:
             return (
-                <h1 className={classNames('xl', styles.contentTitle)}>
+                <h1 className={classNames('xxl', styles.contentTitle)}>
                     {content}
                 </h1>
             )
         case 2:
             return (
-                <h2 className={classNames('l', styles.contentTitle)}>
+                <h2 className={classNames('xl', styles.contentTitle)}>
                     {content}
                 </h2>
             )
         case 3:
             return (
-                <h3 className={classNames('m', styles.contentTitle)}>
+                <h3 className={classNames('l', styles.contentTitle)}>
                     {content}
                 </h3>
             )

@@ -14,15 +14,15 @@ const ExperienceItem: React.FC<Props> = ({ title, subtitle, details }) => {
     return (
         <div className={styles.experienceCategoryContentItem}>
             <div className={styles.experienceCategoryContentItemTitle}>
-                <span className={classNames('l', 'colorBlack')}>{title}</span>
+                <span className={classNames('xl', 'colorBlack')}>{title}</span>
             </div>
             <div className={styles.experienceCategoryContentItemSubtitle}>
-                <span className={classNames('s', 'colorGreen')}>{subtitle}</span>
+                <span className={classNames('m', 'colorGreen')}>{subtitle}</span>
             </div>
             <div className={styles.experienceCategoryContentItemDetail}>
                 {
                     details.map(detail => (
-                      <span key={detail.length} className={classNames('s', 'colorBlack')}>
+                      <span key={detail.length} className={classNames('m', 'colorBlack')}>
                         - {detail}<br />
                       </span>  
                     ))

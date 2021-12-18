@@ -14,10 +14,10 @@ const EducationItem: React.FC<Props> = ({ degree, school, period }) => {
     return (
         <div className={styles.experienceCategoryContentItem}>
             <div className={styles.experienceCategoryContentItemTitle}>
-                <span className={classNames('l', 'colorBlack')}>{degree}</span>
+                <span className={classNames('xl', 'colorBlack')}>{degree}</span>
             </div>
             <div className={styles.experienceCategoryContentItemDetail}>
-                <span className={classNames('s', 'colorBlack')}>{`${school}, ${period}`}</span>
+                <span className={classNames('m', 'colorBlack')}>{`${school}, ${period}`}</span>
             </div>
         </div>
     );
