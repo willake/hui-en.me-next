@@ -6,3 +6,13 @@ WaterDo is a todo list app with gamification feature, making daily tasks fun. In
 </figure>
 
 ![Pic](/images/cover.jpg)
+
+<image>Hello</image>
+
+~~~js
+console.log('It works!')
+~~~
+
+:embed[ab](https://www.youtube.com/watch?v=8TQIvdFl4aU)
+
+::youtube[Video of a cat in a box]{#xmeTMo7Ej8E}
