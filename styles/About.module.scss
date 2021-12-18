@@ -18,9 +18,11 @@
     position: relative;
     width: 128px;
     height: 128px;
-    border: 3px solid #70a9a1;
-    border-radius: 50%;
     margin: 10px 0;
+
+    img {
+        border-radius: 50%;
+    }
 
     @media screen and (min-width: $lg){
         width: 150px;
