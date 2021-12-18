@@ -16,8 +16,12 @@ const Home: NextPage<HomeProps> = ({data}) => {
     <>
       <Meta 
       title='Hui-En Lin | Game Programmer'
-      description='hello'
-      keywords='game'/>
+      description='
+        A Communicable programmer with experience in collaborating with people from different roles, 
+        able to think in more than one perspective, making collaboration increasingly efficient. 
+        As a programmer with professional experience in developing products with Unity for almost 3 years, 
+        I have the ability of implementing gameplay features, improving graphic, designing code architecture and optimizing games effectively.'
+      keywords='Game, Game Programeer, Game Developer, Hui En Lin, Hui-En, Willake, Programmer, Game Development'/>
       <Header />
       <Portfolio 
         professionals={data.professionalProjects}
