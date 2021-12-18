@@ -36,6 +36,7 @@ export type AboutAPIData = {
 
 export type ProjectMeta = {
     id: number,
+    route: string,
     previewImageUrl: string,
     title: string,
     tools: string[],
@@ -50,10 +51,9 @@ export type ProjectArticle = {
     id: number,
     title: string,
     description: string,
-    keywords: string[],
+    keywords: string,
     type: string,
     size: string,
     language: string,
-    role: string,
-    content: string
+    role: string
 }

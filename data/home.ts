@@ -4,6 +4,7 @@ export const data: HomeAPIData = {
     professionalProjects: [
         {
             id: 0,
+            route: "waterdo",
             title: "WaterDo",
             previewImageUrl: "/images/projects/waterdo/preview.jpg",
             tools: [
@@ -12,6 +13,7 @@ export const data: HomeAPIData = {
         },
         {
             id: 1,
+            route: "forest-browser",
             title: "Forest Browser Extension",
             previewImageUrl: "/images/projects/forest-browser/preview.jpg",
             tools: [
@@ -22,6 +24,7 @@ export const data: HomeAPIData = {
     sideProjects: [
         {
             id: 2,
+            route: "hourglass",
             title: "Hourglass",
             previewImageUrl: "/images/projects/hourglass/preview.jpg",
             tools: [
@@ -30,6 +33,7 @@ export const data: HomeAPIData = {
         },
         {
             id: 3,
+            route: "escape-the-room-remake",
             title: "Escape the Room Remake",
             previewImageUrl: "/images/projects/escape-the-room-remake/preview.jpg",
             tools: [
@@ -38,6 +42,7 @@ export const data: HomeAPIData = {
         },
         {
             id: 4,
+            route: "snowball-rage",
             title: "Snowball Rage",
             previewImageUrl: "/images/projects/snowball-rage/preview.jpg",
             tools: [
@@ -46,6 +51,7 @@ export const data: HomeAPIData = {
         },
         {
             id: 5,
+            route: "escape-the-room",
             title: "Escape the Room",
             previewImageUrl: "/images/projects/escape-the-room/preview.jpg",
             tools: [
@@ -54,6 +60,7 @@ export const data: HomeAPIData = {
         },
         {
             id: 6,
+            route: "i-just-want-to-cook",
             title: "I Just Want to Cook",
             previewImageUrl: "/images/projects/i-just-want-to-cook/preview.jpg",
             tools: [
@@ -62,6 +69,7 @@ export const data: HomeAPIData = {
         },
         {
             id: 7,
+            route: "secret-triangle",
             title: "Secret Triangle",
             previewImageUrl: "/images/projects/secret-triangle/preview.jpg",
             tools: [
@@ -70,6 +78,7 @@ export const data: HomeAPIData = {
         },
         {
             id: 8,
+            route: "pinka",
             title: "Pinka",
             previewImageUrl: "/images/projects/pinka/preview.jpg",
             tools: [

@@ -14,7 +14,7 @@ const PortfolioItem: React.FC<Props> = ({ meta }) => {
     let background = <style>{}</style>
 
     return (
-        <Link href="/project/[id]" as={`/project/${meta.id}`}>
+        <Link href={`/projects/${meta.route}`}>
             <a title={meta.title} className={styles.portfolioItem}>
                 <div className={styles.portfolioItemBody} style={{backgroundImage: `url(${server}/${meta.previewImageUrl})`}}>
                     <div className={styles.portfolioItemOverlay}></div>
