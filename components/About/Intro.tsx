@@ -23,6 +23,11 @@ const Intro: React.FC<IntroProps> = ({intro}) => {
                     </div>
                 ))}
             </div>
+            <div className={classNames(styles.cvButton, 'hoverable')}>
+                <a href="/cv.pdf">
+                    <span className={classNames('l', 'colorWhite')}>CV PDF</span>
+                </a>
+            </div>
         </section>
     );
 };
