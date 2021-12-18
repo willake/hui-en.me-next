@@ -4,19 +4,20 @@ import classNames from 'classnames';
 import { ProjectMeta } from '../../schema';
 import { server } from '../../config';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type Props = {
     meta: ProjectMeta
 }
 
 const PortfolioItem: React.FC<Props> = ({ meta }) => {
-
-    let background = <style>{}</style>
-
     return (
         <Link href={`/projects/${meta.route}`}>
             <a title={meta.title} className={styles.portfolioItem}>
-                <div className={styles.portfolioItemBody} style={{backgroundImage: `url(${server}/${meta.previewImageUrl})`}}>
+                <div className={styles.portfolioItemBody}>
+                    <div className={styles.protfolioBackground}>
+                        <Image alt={meta.title} width="1200" height="600" src={`/${meta.previewImageUrl}`} layout="responsive" />
+                    </div>
                     <div className={styles.portfolioItemOverlay}></div>
                     <div className={styles.portfolioItemText}>
                         <h2 className={styles.portfolioItemTitle}>
