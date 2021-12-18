@@ -22,17 +22,17 @@ const Menu: React.FC<Props> = ({isOpen, closeMenu}) => {
             <ul>
                 <li>
                     <Link href="/">
-                        <a className={classNames('xl', 'colorWhite')}>Home</a>
+                        <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>Home</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/about">
-                        <a className={classNames('xl', 'colorWhite')}>About</a>
+                        <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>About</a>
                     </Link>
                 </li>
                 <li>    
                     <Link href="/#portfolio">
-                        <a className={classNames('xl', 'colorWhite')}>Portfolio</a>
+                        <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>Portfolio</a>
                     </Link>
                 </li>
             </ul>
