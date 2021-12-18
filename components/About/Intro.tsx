@@ -13,7 +13,7 @@ const Intro: React.FC<IntroProps> = ({intro}) => {
         <section id="intro" className={styles.intro}>
             <div>
                 <div className={styles.introAvatar}>
-                    <Image src='/images/about/me.jpg' alt="me" layout="fill" objectFit="contain"/>
+                    <Image src='/images/about/me.jpg' alt="me" width="160" height="160" layout="responsive"/>
                 </div>
             </div>
             <div className={styles.introTexts}>
