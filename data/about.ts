@@ -1,6 +1,6 @@
 import { AboutAPIData } from "../schema";
 
-export const data: AboutAPIData = {
+export const aboutData: AboutAPIData = {
     intro: [
         `Communicable programmer with experience in collaborating with people from different roles, 
         able to think in more than one perspective, making collaboration increasingly efficient. 
