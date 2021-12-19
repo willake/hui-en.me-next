@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     return (
         <section id="contact" className={styles.contact}>
             <div className={styles.contactButton}>
-                <a title="Email Contact" className={styles.contactButtonLink} href="mailto:willakelin@gmail.com">
+                <a title="Email Contact" className={styles.contactButtonLink} href="mailto:willakelin@gmail.com" target="_blank" rel="noopener noreferrer">
                     <span className={classNames('l', 'colorWhite')}>Contact me</span>
                 </a>
             </div>
@@ -18,13 +18,13 @@ const Contact: React.FC = () => {
                 </span>
             </div>
             <div className={styles.contactLinks}>
-                <a title="LinkedIn Contact" className={styles.contactLink} href="https://www.linkedin.com/in/willakelin/">
+                <a title="LinkedIn Contact" className={styles.contactLink} href="https://www.linkedin.com/in/willakelin/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin size={32}/>
                 </a>
-                <a title="Github Contact" className={styles.contactLink} href="https://github.com/willake">
+                <a title="Github Contact" className={styles.contactLink} href="https://github.com/willake" target="_blank" rel="noopener noreferrer">
                     <FaGithub size={32}/>
                 </a>
-                <a title="Twitter Contact" className={styles.contactLink} href="https://twitter.com/WillakeLin">
+                <a title="Twitter Contact" className={styles.contactLink} href="https://twitter.com/WillakeLin" target="_blank" rel="noopener noreferrer">
                     <FaTwitter size={32}/>
                 </a>
             </div>

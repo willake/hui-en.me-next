@@ -24,7 +24,7 @@ const Intro: React.FC<IntroProps> = ({intro}) => {
                 ))}
             </div>
             <div className={classNames(styles.cvButton, 'hoverable')}>
-                <a href="/cv.pdf">
+                <a title="CV" href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                     <span className={classNames('l', 'colorWhite')}>CV PDF</span>
                 </a>
             </div>
