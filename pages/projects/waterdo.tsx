@@ -8,6 +8,7 @@ import Content from "../../components/project/Content";
 import Heading from "../../components/project/Heading";
 import Paragraph from "../../components/project/Paragraph";
 import VideoBlock from "../../components/project/VideoBlock";
+import Link from "../../components/project/Link";
 
 
 const WaterDo: NextPage= () => {
@@ -49,6 +50,9 @@ const WaterDo: NextPage= () => {
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
             </Content>
+            <Link title="Official Website" href="https://waterdo.seekrtech.com/en/">Official Website</Link>
+            <Link title="Official Website" href="https://apps.apple.com/us/app/waterdo-to-do-list-notes/id1388228852">App Store</Link>
+            <Link title="Official Website" href="https://play.google.com/store/apps/details?id=com.seekrtech.waterapp">Google Play Store</Link>
         </>
     );
 };
