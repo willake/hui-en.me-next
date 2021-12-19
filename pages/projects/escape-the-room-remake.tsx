@@ -8,6 +8,7 @@ import Content from "../../components/project/Content";
 import Heading from "../../components/project/Heading";
 import Paragraph from "../../components/project/Paragraph";
 import ImageBlock from "../../components/project/ImageBlock";
+import Link from "../../components/project/Link";
 
 
 const EscapeTheRoomRemake: NextPage= () => {
@@ -92,6 +93,9 @@ const EscapeTheRoomRemake: NextPage= () => {
                     width={600}
                     height={338} />
             </Content>
+            <Link title="Download" href="https://drive.google.com/open?id=1Q9VuZCsBFWiHdgQQeirCnUG6k0ZCJ6ih">
+                Download
+            </Link>
         </>
     );
 };

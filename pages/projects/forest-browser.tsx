@@ -8,6 +8,7 @@ import Content from "../../components/project/Content";
 import Heading from "../../components/project/Heading";
 import Paragraph from "../../components/project/Paragraph";
 import ImageBlock from "../../components/project/ImageBlock";
+import Link from "../../components/project/Link";
 
 
 const ForestBrowser: NextPage= () => {
@@ -65,6 +66,12 @@ const ForestBrowser: NextPage= () => {
                     width={770}
                     height={636} />
             </Content>
+            <Link title="Firefox" href="https://addons.mozilla.org/en-US/firefox/addon/forest-stay-focused-be-present/">
+                Firefox Addon
+            </Link>
+            <Link title="Chrome" href="https://chrome.google.com/webstore/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk?hl=en">
+                Chrome Extension
+            </Link>
         </>
     );
 };
