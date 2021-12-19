@@ -2,7 +2,7 @@ import styles from '../../styles/Nav.module.scss';
 import React from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
-import { FaTimes } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
 
 type Props = {
     isOpen: boolean,
@@ -16,23 +16,23 @@ const Menu: React.FC<Props> = ({isOpen, closeMenu}) => {
         <div className={styles.menu}>
             <div className={styles.menuHeader}>
                 <div onClick={closeMenu} className={classNames(styles.closeButton, 'colorWhite')}>
-                    <FaTimes size={46}/>
+                    <AiOutlineClose size={46}/>
                 </div>
             </div>
             <ul>
                 <li>
                     <Link href="/">
-                        <a className={classNames('xl', 'colorWhite')}>Home</a>
+                        <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>Home</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/about">
-                        <a className={classNames('xl', 'colorWhite')}>About</a>
+                        <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>About</a>
                     </Link>
                 </li>
                 <li>    
                     <Link href="/#portfolio">
-                        <a className={classNames('xl', 'colorWhite')}>Portfolio</a>
+                        <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>Portfolio</a>
                     </Link>
                 </li>
             </ul>
