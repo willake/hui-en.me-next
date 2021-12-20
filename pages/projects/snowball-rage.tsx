@@ -50,7 +50,6 @@ const SnowballRage: NextPage= () => {
                     alt="rage"
                     width={600}
                     height={338} />
-                <Heading level={2}>Blueprint</Heading>
                 <ImageBlock 
                     src="/images/projects/snowball-rage/gifs/slince.gif"
                     alt="slince"

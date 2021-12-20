@@ -36,7 +36,7 @@ const ForestBrowser: NextPage= () => {
                 language={data.language}
                 role={data.role} />
             <Content>
-                <Heading level={1}>Introduction</Heading>
+                <Heading level={2}>Introduction</Heading>
                 <Paragraph>
                     Forest Browser Extension is a mini gamification tool on Google Chrome and Firefox. 
                     It is like the Forest app, which is the main product of Seekrtech, but a feature-limited version. 

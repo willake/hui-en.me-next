@@ -36,7 +36,7 @@ const WaterDo: NextPage= () => {
                 language={data.language}
                 role={data.role} />
             <Content>
-                <Heading level={1}>Introduction</Heading>
+                <Heading level={2}>Introduction</Heading>
                 <Paragraph>
                     WaterDo is a to-do list app with a gamification feature that makes daily tasks interesting. 
                     In this app, users schedule their personal tasks as bubbles, popping them when they complete tasks. 
