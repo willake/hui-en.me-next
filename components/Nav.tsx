@@ -37,12 +37,7 @@ const Nav: React.FC = () => {
                 </li>
                 <li className={'hoverable'}>
                     <Link href="/about">
-                        <a className={classNames('xl', 'colorWhite')}>About</a>
-                    </Link>
-                </li>
-                <li className={'hoverable'}>    
-                    <Link href="/#portfolio">
-                        <a className={classNames('xl', 'colorWhite')}>Portfolio</a>
+                        <a className={classNames('xl', 'colorWhite')}>About Me</a>
                     </Link>
                 </li>
             </ul>

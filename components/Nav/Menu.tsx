@@ -30,11 +30,6 @@ const Menu: React.FC<Props> = ({isOpen, closeMenu}) => {
                         <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>About</a>
                     </Link>
                 </li>
-                <li>    
-                    <Link href="/#portfolio">
-                        <a onClick={closeMenu} className={classNames('xl', 'colorWhite')}>Portfolio</a>
-                    </Link>
-                </li>
             </ul>
         </div>
     </>
