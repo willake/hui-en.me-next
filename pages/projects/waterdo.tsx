@@ -16,8 +16,11 @@ const WaterDo: NextPage= () => {
         id: 0,
         type: "Professional",
         title: "WaterDo",
-        description: "",
-        keywords: "to-do list, WaterDo, Game, Gamification, Game Programmer, Willake, Lin Hui En, Game Development",
+        description: `WaterDo is a to-do list app with a gamification feature that makes daily tasks interesting. 
+        In this app, users schedule their personal tasks as bubbles, popping them when they complete tasks. 
+        By popping bubbles, they gain energy for exploring stories in WaterDo. 
+        I served as a Unity programmer in this project, implementing main game features and working with a cross-functional team with professional people.`,
+        keywords: "to-do list, WaterDo, Game, Gamification, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio",
         size: "over 10",
         language: "Unity C#",
         role: "Unity Software Engineer"
@@ -26,7 +29,7 @@ const WaterDo: NextPage= () => {
     return (
         <>
             <Meta 
-                title={`${data.title} | Hui En Lin | Game Programmer`}
+                title={`${data.title} | Hui En Lin | Game Programmer Portfolio`}
                 description={data.description}
                 keywords={data.keywords}/>
             <Banner title={data.title} />

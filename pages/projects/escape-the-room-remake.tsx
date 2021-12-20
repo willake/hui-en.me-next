@@ -16,8 +16,13 @@ const EscapeTheRoomRemake: NextPage= () => {
         id: 3,
         type: "Side",
         title: "Escape the Room Remake",
-        description: "",
-        keywords: "Escape the Room, Unreal Engine, 3D game, Game, Game Programmer, Willake, Lin Hui En, Game Development",
+        description: `Escape the Room Remake is a piece I created to practice 3D game development. 
+        I remade a 2D Flash game I had previously built, called Escape the Room. In this development project, 
+        I used the knowledge I had gained from Ryan Hipple’s speech “Game Architecture with Scriptable Objects” to 
+        create a system that enables the program to observe changes in data and react accordingly. 
+        I also found that this technique made the program structure easier to maintain. 
+        In addition, this was my first game made with the Unreal Engine.`,
+        keywords: "Escape the Room, Unreal Engine, 3D game, Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio",
         size: "2",
         language: "Unreal Blueprint",
         role: "Gameplay Programmer"
@@ -26,7 +31,7 @@ const EscapeTheRoomRemake: NextPage= () => {
     return (
         <>
             <Meta 
-                title={`${data.title} | Hui En Lin | Game Programmer`}
+                title={`${data.title} | Hui En Lin | Game Programmer Portfolio`}
                 description={data.description}
                 keywords={data.keywords}/>
             <Banner title={data.title} />

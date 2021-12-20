@@ -16,8 +16,13 @@ const ForestBrowser: NextPage= () => {
         id: 1,
         type: "Professional",
         title: "Forest Browser Extension",
-        description: "",
-        keywords: "Forest, Forest Browser, Game, Gamification, Game Programmer, Willake, Lin Hui En, Game Development",
+        description: `Forest Browser Extension is a mini gamification tool on Google Chrome and Firefox. 
+        It is like the Forest app, which is the main product of Seekrtech, but a feature-limited version. 
+        In this extension, users can set up a timer that blocks all websites except those in the allowed list. 
+        It was my first project at SeekrTech. 
+        I refactored the whole codebase and developed new features that connected with the server API of Forest. 
+        The experience was valuable, since I collaborated with a professional back-end engineer and gained a great deal of networking and database design knowledge.`,
+        keywords: "Forest, Forest Browser, Game, Gamification, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio",
         size: "3",
         language: "Javascript",
         role: "Front-End Intern"
@@ -26,7 +31,7 @@ const ForestBrowser: NextPage= () => {
     return (
         <>
             <Meta 
-                title={`${data.title} | Hui En Lin | Game Programmer`}
+                title={`${data.title} | Game Programmer Portfolio`}
                 description={data.description}
                 keywords={data.keywords}/>
             <Banner title={data.title} />

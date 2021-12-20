@@ -14,9 +14,15 @@ const SnowballRage: NextPage= () => {
     let data: ProjectArticle = {
         id: 3,
         type: "Side",
-        title: "Escape the Room Remake",
-        description: "",
-        keywords: "Snowball Rage, Unreal Engine, Game Jam, Game, Game Programmer, Willake, Lin Hui En, Game Development",
+        title: "Snowball Rage",
+        description: `Snowball Rage is a game that a friend and I created for the 2018 Unreal Game Jam. At the Game Jam, 
+        developers have a week to create a game. I primarily used Blueprint to implement game functions. 
+        The idea was to allow players to experience the thrill of destruction. 
+        The game’s min character is a snowball that keeps rolling toward a village at the foot of a mountain. 
+        It keeps growing as it rolls down. It can destroy obstacles and roll over villagers to gain points on the way down. 
+        If a villager hits the snowball, it shrinks. 
+        The player must ensure the snowball is of a specific size when it reaches the village to destroy it.`,
+        keywords: "Snowball Rage, Unreal Engine, Game Jam, Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio",
         size: "2",
         language: "Unreal Blueprint",
         role: "Gameplay Programmer",
@@ -25,7 +31,7 @@ const SnowballRage: NextPage= () => {
     return (
         <>
             <Meta 
-                title={`${data.title} | Hui En Lin | Game Programmer`}
+                title={`${data.title} | Hui En Lin | Game Programmer Portfolio`}
                 description={data.description}
                 keywords={data.keywords}/>
             <Banner title={data.title} />

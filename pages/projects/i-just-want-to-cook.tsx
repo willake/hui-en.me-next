@@ -10,13 +10,17 @@ import Paragraph from "../../components/project/Paragraph";
 import ImageBlock from "../../components/project/ImageBlock";
 
 
-const EscapeTheRoomRemake: NextPage= () => {
+const IJustWantToCook: NextPage= () => {
     let data: ProjectArticle = {
         id: 6,
         type: "Side",
         title: "I Just Want to Cook",
-        description: "",
-        keywords: "I Just Want to Cook, local multiple player, Game, Game Programmer, Willake, Lin Hui En, Game Development",
+        description: `I Just Want to Cook is the first game I made with Unity for a class. 
+        The assignment was to build a local multiplayer game. 
+        I designed the game mechanism drawing inspiration from the traditional hide-and-seek game we would play as children.
+        This game has two main characters: hunter and rabbit. The hunter needs to catch the rabbit, 
+        and the rabbit needs to look at a recipe to find ingredients and take them home to cook.`,
+        keywords: "I Just Want to Cook, local multiple player, Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio",
         size: "1",
         language: "Unity C#",
         role: "Game Programmer"
@@ -25,7 +29,7 @@ const EscapeTheRoomRemake: NextPage= () => {
     return (
         <>
             <Meta 
-                title={`${data.title} | Hui En Lin | Game Programmer`}
+                title={`${data.title} | Hui En Lin | Game Programmer Portfolio`}
                 description={data.description}
                 keywords={data.keywords}/>
             <Banner title={data.title} />
@@ -96,4 +100,4 @@ const EscapeTheRoomRemake: NextPage= () => {
     );
 };
 
-export default EscapeTheRoomRemake;
+export default IJustWantToCook;
