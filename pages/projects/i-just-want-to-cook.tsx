@@ -37,11 +37,11 @@ const EscapeTheRoomRemake: NextPage= () => {
             <Content>
                 <Heading level={2}>Introduction</Heading>
                 <Paragraph>
-                    I Just Want to Cook is the game I made In my first Unity class in university. 
-                    Restricting by teacher, this game was designed to be a local multiple player game. 
-                    The game mechanic was designed by myself, inspiring from the conventional game, hide-and-seek. 
-                    There are two characters, the hunter and the rabbit. 
-                    The objective of hunter is to catch the rabbit, and the goal of rabbit is to find ingredients for cooking.
+                    I Just Want to Cook is the first game I made with Unity for a class. 
+                    The assignment was to build a local multiplayer game. 
+                    I designed the game mechanism drawing inspiration from the traditional hide-and-seek game we would play as children.
+                    This game has two main characters: hunter and rabbit. The hunter needs to catch the rabbit, 
+                    and the rabbit needs to look at a recipe to find ingredients and take them home to cook.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/i-just-want-to-cook/gifs/place-cheese.gif"
@@ -50,10 +50,11 @@ const EscapeTheRoomRemake: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Local Multiple Players</Heading>
                 <Paragraph>
-                    The mechanic was not as easy as I thought. 
-                    It is noticeable that the game is unplayable since these players play hide-and-seek when they could see each others screen. 
-                    In order to make this game playable, maps were designed like mazes. 
-                    By that, players could not precisely locate their opponents position even they could see them.
+                    The mechanism for this game was not as simple as I had anticipated. Obviously, 
+                    hide and seek cannot be played within the local multiple-player mechanism, 
+                    because the screen is divided between two players, and they can easily see each other’s screens. 
+                    To make the mechanism work, I designed the map like a maze. 
+                    This way, even if a player can see the opponent’s screen, there is no way to know the opponent’s location for certain.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/i-just-want-to-cook/gifs/chasing.gif"
@@ -62,10 +63,11 @@ const EscapeTheRoomRemake: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Third Person Camera</Heading>
                 <Paragraph>
-                    In I Just Want to Cook, each player could only use four keys to move. 
-                    For example, player No.1 uses W, A, S, and D to moving forward, backward, left and right respectively. 
-                    However, it is clear that players is unable to control their camera by themselves, cameras should rotate automatically. 
-                    In order to achieve this goal, I implement Zelda like third person camera which will rotate by themselves, depending on the direction player toward.
+                    Due to limited keyboard space, two players can use only four arrow keys to move in I Just Want to Cook. 
+                    For instance, one player uses W, A, S, and D to move forward, backward, left, and right. However, 
+                    the players cannot control the camera angle, so I need to make the camera rotate automatically. 
+                    To attain this goal, I referred to games like Zelda and GTA, 
+                    and wrote a camera script that automatically rotates according to the player’s forward direction.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/i-just-want-to-cook/gifs/third-person-camera.gif"
@@ -74,8 +76,10 @@ const EscapeTheRoomRemake: NextPage= () => {
                     height={446} />
                 <Heading level={2}>World Space UI</Heading>
                 <Paragraph>
-                    I also did experiments in this game. For the user interface of main menu, I placed all interfaces in world space. 
-                    Making UI switching be like traveling in the game world. It makes the menu more vigorous.
+                    I tried making changes to the UI system. 
+                    In the main game menu, I put all the UI in a 3D scene and switched between different UIs, 
+                    making the camera point toward the corresponding place, 
+                    which made the UI more dynamic, as if the player is traveling through the scene.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/i-just-want-to-cook/gifs/how-to-play-menu.gif"

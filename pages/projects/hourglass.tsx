@@ -37,10 +37,12 @@ const ForestBrowser: NextPage= () => {
             <Content>
                 <Heading level={2}>Introduction</Heading>
                 <Paragraph>
-                    Hourglass was a graduate project in my final year of university. My main duty was implementing gameplay mechanics, 
-                    including character movement, object interaction and boss fighting. 
-                    In addition, I imported shaders bought from Unity Assets Store to improv animations, making them more vigorous. 
-                    In this experience, collaborating within the team was the most valuable skills that I acquired.
+                    Hourglass was my graduation project. 
+                    It is a game that involves travel through time and space. In the game, players have to go back and forth to solve puzzles in different time periods. 
+                    There are many action elements along the way, making it a challenging game. 
+                    My primary duty in the project was to implement gameplay features, including character movement, object interaction, and boss fighting. 
+                    In addition, we introduced shaders to enhance the animation effect and make it more energetic. 
+                    Besides developing systems in the project, I also learned to cooperate with other people who had different areas of expertise.
                 </Paragraph>
                 <Paragraph>
                     It is a 2D-scrolling puzzle game, about a scientist willing to restore the mistakes he did before. 
@@ -59,10 +61,12 @@ const ForestBrowser: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Time Travel Mechanic</Heading>
                 <Paragraph>
-                    Time traveling is the core mechanic in this game. 
-                    I divided game assets into three different layers, manage them by a state manager. 
-                    It controls camera and culls everything that is not belong to the certain time period. 
-                    Because all objects in certain level are preloaded, so travelling between time period is very smooth.
+                    Time Travel Mechanic is the main gaming mechanism of the game. 
+                    I designed a system to divide the three spatiotemporal scenes into different layers and 
+                    manage them with a state manager that controls the game’s camera to choose which layer scene to view and 
+                    hides scenes that do not belong in this spatiotemporal scene, thereby controlling and managing resources 
+                    appropriately to boost efficiency. 
+                    There are no cutscenes between the times and spaces in this system, making the experience smoother.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/hourglass/gifs/time-travel-1.gif"
@@ -86,9 +90,10 @@ const ForestBrowser: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Boss Fight</Heading>
                 <Paragraph>
-                    In the Boss level, I implemented the Boss AI with a state machine. 
-                    It manage the boss movement and determined suitable reaction. 
-                    For example when the boss is almost dead then it will start trying to cut the rope that player is grabbing.
+                    I used the state machine’s design pattern to manage the boss’s AI for the boss level. 
+                    It observes the current state of the boss and makes it behave accordingly. 
+                    For instance, when the boss’s blood volume is about to run out, 
+                    it will try to bite the rope that the protagonist is climbing to make it fall into the water.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/hourglass/gifs/boss-fight-5.gif"
@@ -112,14 +117,14 @@ const ForestBrowser: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Collaboration Skill</Heading>
                 <Paragraph>
-                    Initially, most of members in the team had no much cooperating experience in game development, especially working with over 7 people. 
-                    We worked on our positions separately without much communication, which led the whole game development process slow. 
-                    Fortunately, all of us were dedicated solution seekers. 
-                    We found this problem and had many meetings, discussing about how to improving productivity. 
-                    After then, several tools were adopted to overcome this issue. 
-                    For example, we started using Trello to manage schedule and track works. 
-                    It clearly allowed us working more closely and knowing works of each other. In terms of programming team, we adopted the new version control feature of Unity, which is based on git but server was provided by Unity official. 
-                    It significantly reduce the amount of merging issues.
+                    At first, most of my teammates did not have experience working with others on game development. 
+                    We had at least seven members in our team, which made matters more complicated. 
+                    We all conducted our tasks separately without much communication among us. 
+                    This slowed the progress of our development. 
+                    Fortunately, we were a team of dedicated solution seekers. 
+                    We soon realized the problem and held several meetings to address the situation. We made some changes, 
+                    such as using Trello to plan and track the progress of our work and help us understand what everyone else was doing. 
+                    Such changes significantly elevated our work efficiency and helped coordinate our work.
                 </Paragraph>
             </Content>
         </>

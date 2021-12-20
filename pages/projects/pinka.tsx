@@ -37,10 +37,11 @@ const Pinka: NextPage= () => {
             <Content>
                 <Heading level={2}>Introduction</Heading>
                 <Paragraph>
-                    Pinka is a game that help users learn English. 
-                    This project was conducted by Dr. Zhi-Hong Chen, who is focusing on researching educational game. 
-                    The team was only included 2 students, we designed the game mechanic together with professor and implemented all gameplay feature in Unity C#. 
-                    When the first version of prototype was finished, we won a competition that over 20 teams from 3 different schools participated in as the first place.
+                    Pinka is a game that helps players learn English. 
+                    This project was headed by Prof. Chen Zhi-Hong, who specializes in researching educational games. 
+                    Our team consisted of just two students. We designed and built a game mechanism to help players recite words from scratch. 
+                    When we finished the game’s first version, 
+                    we entered it into a competition against 20 projects from three different universities and won first place.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/pinka/gifs/combat.gif"

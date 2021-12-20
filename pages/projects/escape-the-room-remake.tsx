@@ -38,9 +38,12 @@ const EscapeTheRoomRemake: NextPage= () => {
             <Content>
                 <Heading level={2}>Introduction</Heading>
                 <Paragraph>
-                    In order to practice 3D game development from beginning, the quickest way would be remake a existing game. 
-                    Meanwhile I try to make a simple game with knowledge that I recently acquired, which make code structure rigorous and easy for debugging. 
-                    That is why Escape The Room Remake came out, and it is my first game in Unreal Engine.
+                    Escape the Room Remake is a piece I created to practice 3D game development. 
+                    I remade a 2D Flash game I had previously built, called Escape the Room. In this development project, 
+                    I used the knowledge I had gained from Ryan Hipple’s speech “Game Architecture with Scriptable Objects” to 
+                    create a system that enables the program to observe changes in data and react accordingly. 
+                    I also found that this technique made the program structure easier to maintain. 
+                    In addition, this was my first game made with the Unreal Engine.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room-remake/gifs/grab-items.gif"
@@ -49,10 +52,9 @@ const EscapeTheRoomRemake: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Blueprint</Heading>
                 <Paragraph>
-                    Blueprint is a visual scripting language in unreal engine. 
-                    It is pretty useful for fast track development and experiment. 
-                    In order to quickly understand how to use Unreal Engine, I chose it as the core script language in the game. 
-                    With its advantage, I could focus on doing experiment and gaining feedback quickly.
+                    Blueprint is the visual scripting language of Unreal Engine. 
+                    This language is easy to understand and suitable for fast-track development. With this advantage, 
+                    I used Blueprint for the primary language of this game, enabling me to focus on understanding the architecture of Unreal Engine.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room-remake/gifs/open-painting.gif"
@@ -61,10 +63,12 @@ const EscapeTheRoomRemake: NextPage= () => {
                     height={338} />
                 <Heading level={2}>Data oriented programming</Heading>
                 <Paragraph>
-                    It was inspired by a talk in Unity conference, &quot;Unite Austin 2017 - Game Architecture with Scriptable Objects&quot; by Ryan Hipple. 
-                    It used ScriptableObject, which is a scriptable data object in Unity, as the storage of game state. 
-                    All objects in game subscribed states in scriptable objects and reacted when data changed. 
-                    I implemented this concept into my UI system, managing and monitoring states such as selecting item and obtained item in an object.
+                    This is a program architecture inspired by Ryan Hipple’s speech. 
+                    I had wanted to try this on Unity, so I decided to try the Unreal Engine with this project since 
+                    I wished to gain exposure to the Unreal Engine. 
+                    I found that it has a function similar to Unity’s ScriptableObject, 
+                    which stores the state of the game in objects enabling the program to observe state changes and react accordingly. 
+                    I used this system in my UI design, facilitating the debugging process.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room-remake/gifs/open-safe-case.gif"
@@ -73,9 +77,11 @@ const EscapeTheRoomRemake: NextPage= () => {
                     height={338} />
                 <Heading level={2}>3D Art</Heading>
                 <Paragraph>
-                    In this game, I worked with a professional 3D artist, and learnt much knowledge about 3D games and post processing shader. 
-                    It is very useful for me to know how animations work in 3D modeling, with the knowledge I could better determine approaches in different situations. 
-                    In addition, the knowledge of lighting and post processing helped me more understand computer graphics in a applied way.
+                    For this project, I cooperated with a professional 3D artist and learned a great deal about 3D games from him, 
+                    such as how the animation of a 3D model is made and how to operate the game engine so that the character can hold different weapons. 
+                    All this knowledge helped me understand 3D modeling better. 
+                    I also learned about lighting and postprocessing, 
+                    which helped me better understand how to apply my computer graphics knowledge to game development.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room-remake/gifs/open-tv.gif"
