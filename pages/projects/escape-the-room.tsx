@@ -38,11 +38,14 @@ const EscapeTheRoom: NextPage= () => {
             <Content>
                 <Heading level={2}>Introduction</Heading>
                 <Paragraph>
-                    Escape The Room was my first game. This kind of game was very common in Flash games. 
-                    The objective of player is find a key to escape from a place. When I made this game, I only know a little about programming. 
-                    It was tough at the beginning. However I found that programming was very fun for me. 
-                    Solving problems was like solving puzzle in games. 
-                    Except programming, I also designed the puzzles and drew art assets. All of these were good experience as well.
+                    Escape The Room is the first game I have ever created. 
+                    This type of game was popular when I was a child. 
+                    The player’s goal is to escape an enclosed room by solving puzzles. 
+                    When I built this game, I knew very little about programming, and it was hard to develop at first. 
+                    But I gradually found that programming is an enjoyable activity. 
+                    For me, solving programming problems is like solving puzzles in a game. 
+                    I also designed puzzles and drew art materials by myself. 
+                    These experiences gave me plenty of enjoyment.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room/gifs/grab-items.gif"
@@ -51,10 +54,9 @@ const EscapeTheRoom: NextPage= () => {
                     height={446} />
                 <Heading level={2}>Game Mechanic Implementation</Heading>
                 <Paragraph>
-                    As a novice of programming, creating a game was not easy. 
-                    Fortunately the mechanic was not complicated, all of them was successfully implemented with ActionScript 3.0. 
-                    The code base was simple, with full of if else statement, containing the mechanic of puzzle and inventory. 
-                    The state of the game relied on global variables.
+                    As a new programmer, making a game was not easy. 
+                    Fortunately, the mechanism behind this game is not very complicated. 
+                    All code, including puzzles and inventory, was made up of if-else statements.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room/gifs/get-wires.gif"
@@ -63,11 +65,10 @@ const EscapeTheRoom: NextPage= () => {
                     height={446} />
                 <Heading level={2}>Puzzle Design</Heading>
                 <Paragraph>
-                    I love puzzle games, and I played a lot when I was a child. 
-                    With that experience, I designed a number of puzzles for testing. 
-                    All of them were drew on paper at the beginning and test by my friends. 
-                    I picked some of them, which were plausible and interesting, into the real game. .
-                    Unfortunately, the manuscript was lost so I could not show it.
+                    I like puzzle games and I played many of them while growing up. 
+                    As such, I have plenty of ideas about puzzles. I drew many puzzles on paper and asked my friends to try them out. 
+                    After that, I chose some feasible ones to put into my game program. 
+                    Unfortunately, I lost the original hand-drawn plans.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room/gifs/turn-on-lamp.gif"
@@ -81,10 +82,11 @@ const EscapeTheRoom: NextPage= () => {
                     height={446} />
                 <Heading level={2}>Art Assets</Heading>
                 <Paragraph>
-                    In this game, a lot of arts would be needed. 
-                    I asked a friend to teach me how to draw a scene. 
-                    It was not very complicated since all game objects were simple shapes. Scenes were frames in Flash. 
-                    I drew scenes in four directions and specific scenes for objects.
+                    I needed a large number of art materials for this project. 
+                    But the resources on the Internet could not be fit together in the scenes very well, 
+                    making the player’s experience poor, so I decided to draw them myself. 
+                    I sought the help of a friend who is good at drawing to teach me, 
+                    and I slowly drew the objects for the game over a few weeks.
                 </Paragraph>
                 <ImageBlock 
                     src="/images/projects/escape-the-room/screenshot_1.jpg"

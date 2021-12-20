@@ -36,13 +36,12 @@ const WaterDo: NextPage= () => {
                 language={data.language}
                 role={data.role} />
             <Content>
-                <Heading level={1}>Introduction</Heading>
+                <Heading level={2}>Introduction</Heading>
                 <Paragraph>
-                    WaterDo is a todo list app with gamification feature, 
-                    making daily tasks fun. In this app, 
-                    users schedule their personal tasks as bubbles, popping them when they completed and gaining energy. 
-                    With energy gain from bubbles, users could explore stories in WaterDo. 
-                    I participated the project from scratch as a Unity programmer, worked in a cross-functional team with professional people.
+                    WaterDo is a to-do list app with a gamification feature that makes daily tasks interesting. 
+                    In this app, users schedule their personal tasks as bubbles, popping them when they complete tasks. 
+                    By popping bubbles, they gain energy for exploring stories in WaterDo. 
+                    I served as a Unity programmer in this project, implementing main game features and working with a cross-functional team with professional people.
                 </Paragraph>
                 <VideoBlock 
                     title="WaterDo"
