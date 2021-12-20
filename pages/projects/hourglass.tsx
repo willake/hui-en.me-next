@@ -10,13 +10,18 @@ import Paragraph from "../../components/project/Paragraph";
 import ImageBlock from "../../components/project/ImageBlock";
 
 
-const ForestBrowser: NextPage= () => {
+const Hourglass: NextPage= () => {
     let data: ProjectArticle = {
         id: 2,
         type: "Side",
         title: "Hourglass",
-        description: "",
-        keywords: "Hourglass, Unity, 2D Game, side-scroll, time travel, Game Programmer, Willake, Lin Hui En, Game Development",
+        description: `Hourglass was my graduation project. 
+        It is a game that involves travel through time and space. In the game, players have to go back and forth to solve puzzles in different time periods. 
+        There are many action elements along the way, making it a challenging game. 
+        My primary duty in the project was to implement gameplay features, including character movement, object interaction, and boss fighting. 
+        In addition, we introduced shaders to enhance the animation effect and make it more energetic. 
+        Besides developing systems in the project, I also learned to cooperate with other people who had different areas of expertise.`,
+        keywords: "Hourglass, Unity, 2D Game, side-scroll, time travel, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio",
         size: "7",
         language: "Unity C#",
         role: "Game Programmer"
@@ -25,7 +30,7 @@ const ForestBrowser: NextPage= () => {
     return (
         <>
             <Meta 
-                title={`${data.title} | Hui En Lin | Game Programmer`}
+                title={`${data.title} | Hui En Lin | Game Programmer Portfolio`}
                 description={data.description}
                 keywords={data.keywords}/>
             <Banner title={data.title} />
@@ -131,4 +136,4 @@ const ForestBrowser: NextPage= () => {
     );
 };
 
-export default ForestBrowser;
+export default Hourglass;

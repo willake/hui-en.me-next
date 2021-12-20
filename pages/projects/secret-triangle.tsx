@@ -15,8 +15,11 @@ const SecretTriangle: NextPage= () => {
         id: 7,
         type: "Side",
         title: "Secret Triangle",
-        description: "",
-        keywords: "Secret Triangle, turn-base, Game, Game Programmer, Willake, Lin Hui En, Game Development",
+        description: `Secret Triangle is the second game I made with Unity. 
+        Unlike I Just Want to Cook, which is operated with just the keyboard, this game uses a mouse as its primary controller. 
+        From this experience, I learned different ways to use Unity’s ray casting function. 
+        This game also uses a turn-base combat system. Using this system taught me about state machines.`,
+        keywords: "Secret Triangle, turn-base, Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio",
         size: "1",
         language: "Unity C#",
         role: "Game Programmer"
@@ -25,7 +28,7 @@ const SecretTriangle: NextPage= () => {
     return (
         <>
             <Meta 
-                title={`${data.title} | Hui En Lin | Game Programmer`}
+                title={`${data.title} | Hui En Lin | Game Programmer Portfolio`}
                 description={data.description}
                 keywords={data.keywords}/>
             <Banner title={data.title} />
