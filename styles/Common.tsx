@@ -1,6 +1,6 @@
 import { styled } from 'styles';
 import textStyles from './text';
-import { textColors } from './Color';
+import { textColors } from './color';
 
 export const Box = styled('div', {});
 
