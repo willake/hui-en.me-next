@@ -65,7 +65,7 @@ export const homeData: HomeAPIData = {
       route: "snowball-rage",
       title: "Snowball Rage",
       previewImageUrl: "images/projects/snowball-rage/preview.jpg",
-      tools: ["Unreal", "Blueprint"],
+      tools: ["Unreal", "Blueprint", "Game Jam"],
     },
     {
       id: 12,
