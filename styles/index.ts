@@ -1,6 +1,10 @@
 import * as Stitches from '@stitches/react';
 
 export const { styled, getCssText, keyframes } = Stitches.createStitches({
+  media: {
+    sm: '(min-width: 576px',
+    lg: '(min-width: 1024px)',
+  },
   theme: {},
   utils: {
     w: (value: Stitches.PropertyValue<'width'>) => ({ width: value }),

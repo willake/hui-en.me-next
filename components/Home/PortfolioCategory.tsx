@@ -1,8 +1,8 @@
-import styles from '../../styles/Home.module.scss';
 import React from 'react';
-import classNames from 'classnames';
 import { ProjectMeta } from '../../schema';
 import PortfolioItem from './PortfolioItem';
+import { H2, VFlex } from 'styles/Common';
+import { styled } from 'styles';
 
 type Props = {
   title: string;
@@ -12,16 +12,32 @@ type Props = {
 const PortfolioCategory: React.FC<Props> = ({ title, projects }) => {
   return (
     <>
-      <h2 className={styles.portfolioTitle}>
-        <span className={classNames('xl', 'colorBlack')}>{title}</span>
-      </h2>
-      <div className={styles.portfolioRow}>
+      <H2 size={'xl'} textColor={'black'} css={{ fontWeight: 400 }}>
+        {title}
+      </H2>
+      <Row>
         {projects.map((project) => (
           <PortfolioItem key={project.id} meta={project} />
         ))}
-      </div>
+      </Row>
     </>
   );
 };
 
 export default PortfolioCategory;
+
+const Row = styled(VFlex, {
+  alignItems: 'center',
+  justifyContent: 'center',
+  '@sm': {
+    maxWidth: 'calc(100% - 80px)',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    padding: '0 40px',
+  },
+  '@lg': {
+    maxWidth: '1200px',
+    padding: '0 40px',
+  },
+});
