@@ -74,23 +74,28 @@ export const H3 = styled('h3', {
   },
 });
 
-export const Text = styled('span', {
+export const Text = styled('div', {
   variants: {
     size: textStyles,
     textColor: textColors,
   },
 });
 
-export const Button = styled('button', {
-  p: '0 15px',
-  h: 42,
-  display: 'grid',
+export const TextSpan = styled('span', {
+  variants: {
+    size: textStyles,
+    textColor: textColors,
+  },
+});
+
+export const Button = styled('a', {
+  cursor: 'pointer',
+  padding: '0 15px',
+  display: 'box',
   placeItems: 'center',
-  br: 9,
-  boxShadow: '0 6px 0 #075c49',
-  transition: '100ms ease-in-out',
-  '&:active': {
-    boxShadow: '0 0 #075c49',
-    transform: 'translateY(6px)',
+  transition: '.2s ease-in',
+  userSelect: 'none',
+  '&:hover': {
+    transform: 'scale(1.1)',
   },
 });

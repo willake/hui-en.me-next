@@ -13,20 +13,24 @@ type Props = {
 const ExperienceItem: React.FC<Props> = ({ title, subtitle, details }) => {
   return (
     <VFlex css={{ width: '100%', margin: '10px 20px', backgroundColor: WHITE }}>
-      <Box css={{ margin: '10px' }}>
-        <Text size={'xl'} textColor={'black'} css={{ letterSpacing: '0.5px' }}>
-          {title}
-        </Text>
-      </Box>
-      <Box css={{ margin: '5px 5px 10px 10px' }}>
-        <Text
-          size={'m'}
-          textColor={'green'}
-          css={{ fontWeight: 700, letterSpacing: '0.5px' }}
-        >
-          {subtitle}
-        </Text>
-      </Box>
+      <Text
+        size={'xl'}
+        textColor={'black'}
+        css={{ margin: '10px', letterSpacing: '0.5px' }}
+      >
+        {title}
+      </Text>
+      <Text
+        size={'m'}
+        textColor={'green'}
+        css={{
+          margin: '5px 5px 10px 10px',
+          fontWeight: 700,
+          letterSpacing: '0.5px',
+        }}
+      >
+        {subtitle}
+      </Text>
       <Box css={{ margin: '5px 5px 5px 10px' }}>
         {details.map((detail) => (
           <Text
