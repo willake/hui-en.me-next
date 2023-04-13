@@ -32,9 +32,19 @@ export const VFlex = styled('div', {
   flexDirection: 'column',
 });
 
+export const VFlexCenter = styled(VFlex, {
+  alignItems: 'center',
+  justifyContent: 'center',
+});
+
 export const HFlex = styled('div', {
   display: 'flex',
   flexDirection: 'row',
+});
+
+export const HFlexCenter = styled(HFlex, {
+  alignItems: 'center',
+  justifyContent: 'center',
 });
 
 export const Section = styled('section', {

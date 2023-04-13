@@ -5,6 +5,8 @@ import ExperienceCategory from './ExperienceCategory';
 import EducationItem from './EducationItem';
 import { Experience, Education } from '../../schema';
 import EducationCategory from './EducationCategory';
+import { Section } from 'styles/Common';
+import { DARK_GRAY } from 'styles/color';
 
 type ExperienceProps = {
   workExperiences: Experience[];
@@ -18,7 +20,16 @@ const Experience: React.FC<ExperienceProps> = ({
   educations,
 }) => {
   return (
-    <section className={styles.experience}>
+    <Section
+      css={{
+        width: '100%',
+        backgroundColor: DARK_GRAY,
+        alignItems: 'center',
+        marginTop: '10px',
+        paddingTop: '20px',
+        paddingBottom: '20px',
+      }}
+    >
       <ExperienceCategory
         title="Work Experience"
         experiences={workExperiences}
@@ -28,7 +39,7 @@ const Experience: React.FC<ExperienceProps> = ({
         experiences={projectExperiences}
       />
       <EducationCategory title="Education" educations={educations} />
-    </section>
+    </Section>
   );
 };
 

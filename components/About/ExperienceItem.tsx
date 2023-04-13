@@ -1,6 +1,8 @@
 import styles from '../../styles/About.module.scss';
 import React from 'react';
 import classNames from 'classnames';
+import { Box, Text, VFlex } from 'styles/Common';
+import { WHITE } from 'styles/color';
 
 type Props = {
   title: string;
@@ -10,22 +12,35 @@ type Props = {
 
 const ExperienceItem: React.FC<Props> = ({ title, subtitle, details }) => {
   return (
-    <div className={styles.experienceCategoryContentItem}>
-      <div className={styles.experienceCategoryContentItemTitle}>
-        <span className={classNames('xl', 'colorBlack')}>{title}</span>
-      </div>
-      <div className={styles.experienceCategoryContentItemSubtitle}>
-        <span className={classNames('m', 'colorGreen')}>{subtitle}</span>
-      </div>
-      <div className={styles.experienceCategoryContentItemDetail}>
+    <VFlex css={{ margin: '10px 20px', backgroundColor: WHITE }}>
+      <Box css={{ margin: '10px' }}>
+        <Text size={'xl'} textColor={'black'} css={{ letterSpacing: '0.5px' }}>
+          {title}
+        </Text>
+      </Box>
+      <Box css={{ margin: '5px 5px 10px 10px' }}>
+        <Text
+          size={'m'}
+          textColor={'green'}
+          css={{ fontWeight: 700, letterSpacing: '0.5px' }}
+        >
+          {subtitle}
+        </Text>
+      </Box>
+      <Box css={{ margin: '5px 5px 5px 10px' }}>
         {details.map((detail) => (
-          <span key={detail.length} className={classNames('m', 'colorBlack')}>
+          <Text
+            key={detail.length}
+            size={'m'}
+            textColor={'black'}
+            css={{ letterSpacing: '0.5px', lineHeight: 1.7 }}
+          >
             - {detail}
             <br />
-          </span>
+          </Text>
         ))}
-      </div>
-    </div>
+      </Box>
+    </VFlex>
   );
 };
 

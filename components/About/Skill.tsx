@@ -2,6 +2,7 @@ import styles from '../../styles/About.module.scss';
 import React from 'react';
 import SkillSet from './SkillSet';
 import classNames from 'classnames';
+import { Section } from 'styles/Common';
 
 type SkillProps = {
   programmingSkill: string[];
@@ -15,11 +16,19 @@ const Skill: React.FC<SkillProps> = ({
   knowledge,
 }) => {
   return (
-    <section className={styles.skill}>
+    <Section
+      css={{
+        alignItems: 'center',
+        justifyContent: 'center',
+        '@lg': {
+          maxWidth: '1000px',
+        },
+      }}
+    >
       <SkillSet title={'Programming Skills'} skills={programmingSkill} />
       <SkillSet title="Software / Framework" skills={framework} />
       <SkillSet title="Collaboration / Knowledge" skills={knowledge} />
-    </section>
+    </Section>
   );
 };
 
