@@ -37,6 +37,11 @@ export const HFlex = styled('div', {
   flexDirection: 'row',
 });
 
+export const Section = styled('section', {
+  display: 'flex',
+  flexDirection: 'column',
+});
+
 export const H1 = styled('h1', {
   variants: {
     size: textStyles,
@@ -58,9 +63,23 @@ export const H3 = styled('h3', {
   },
 });
 
-export const Text = styled('div', {
+export const Text = styled('span', {
   variants: {
     size: textStyles,
     textColor: textColors,
+  },
+});
+
+export const Button = styled('button', {
+  p: '0 15px',
+  h: 42,
+  display: 'grid',
+  placeItems: 'center',
+  br: 9,
+  boxShadow: '0 6px 0 #075c49',
+  transition: '100ms ease-in-out',
+  '&:active': {
+    boxShadow: '0 0 #075c49',
+    transform: 'translateY(6px)',
   },
 });
