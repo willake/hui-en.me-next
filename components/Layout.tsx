@@ -26,7 +26,6 @@ const Layout: React.FC = ({ children }) => {
       <Footer />
     </>
   );
-  0;
 };
 
 export default Layout;
@@ -35,7 +34,7 @@ const Main = styled('main', {
   width: '100%',
   // flex: '1',
   display: 'flex',
-  // flexDirection: 'column',
-  // justifyContent: 'flex-start',
-  // alignItems: 'center'
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  alignItems: 'center',
 });

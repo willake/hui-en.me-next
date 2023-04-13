@@ -14,7 +14,7 @@ const EducationCategory: React.FC<Props> = ({ title, educations }) => {
   return (
     <VFlexCenter
       css={{
-        width: '90%',
+        width: '100%',
         '@lg': {
           maxWidth: '1000px',
           flexDirection: 'row',

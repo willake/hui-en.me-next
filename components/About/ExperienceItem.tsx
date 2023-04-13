@@ -12,7 +12,7 @@ type Props = {
 
 const ExperienceItem: React.FC<Props> = ({ title, subtitle, details }) => {
   return (
-    <VFlex css={{ margin: '10px 20px', backgroundColor: WHITE }}>
+    <VFlex css={{ width: '100%', margin: '10px 20px', backgroundColor: WHITE }}>
       <Box css={{ margin: '10px' }}>
         <Text size={'xl'} textColor={'black'} css={{ letterSpacing: '0.5px' }}>
           {title}
