@@ -1,4 +1,4 @@
-import { AboutAPIData } from "../schema";
+import { AboutAPIData } from '../schema';
 
 export const aboutData: AboutAPIData = {
   intro: [

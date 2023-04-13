@@ -3,33 +3,30 @@ import React from 'react';
 import classNames from 'classnames';
 
 type Props = {
-    title: string,
-    subtitle: string,
-    details: string[]
-}
-
+  title: string;
+  subtitle: string;
+  details: string[];
+};
 
 const ExperienceItem: React.FC<Props> = ({ title, subtitle, details }) => {
-
-    return (
-        <div className={styles.experienceCategoryContentItem}>
-            <div className={styles.experienceCategoryContentItemTitle}>
-                <span className={classNames('xl', 'colorBlack')}>{title}</span>
-            </div>
-            <div className={styles.experienceCategoryContentItemSubtitle}>
-                <span className={classNames('m', 'colorGreen')}>{subtitle}</span>
-            </div>
-            <div className={styles.experienceCategoryContentItemDetail}>
-                {
-                    details.map(detail => (
-                      <span key={detail.length} className={classNames('m', 'colorBlack')}>
-                        - {detail}<br />
-                      </span>  
-                    ))
-                }
-            </div>
-        </div>
-    );
+  return (
+    <div className={styles.experienceCategoryContentItem}>
+      <div className={styles.experienceCategoryContentItemTitle}>
+        <span className={classNames('xl', 'colorBlack')}>{title}</span>
+      </div>
+      <div className={styles.experienceCategoryContentItemSubtitle}>
+        <span className={classNames('m', 'colorGreen')}>{subtitle}</span>
+      </div>
+      <div className={styles.experienceCategoryContentItemDetail}>
+        {details.map((detail) => (
+          <span key={detail.length} className={classNames('m', 'colorBlack')}>
+            - {detail}
+            <br />
+          </span>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default ExperienceItem;
