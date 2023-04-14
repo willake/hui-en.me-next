@@ -1,30 +1,40 @@
-import classNames from 'classnames';
 import React from 'react';
-import styles from '../../styles/project.module.scss';
+import { H1, H2, H3 } from 'styles/Common';
 
 type Props = {
   level: number;
 };
 
 const Heading: React.FC<Props> = ({ level, children }) => {
-  let content = <span className={'colorGreen'}>{children}</span>;
-
+  const titleStyle = {
+    fontWeight: 600,
+    marginTop: '30px',
+    marginBottom: '10px',
+  };
   switch (level) {
     case 1:
       return (
-        <h1 className={classNames('xxl', styles.contentTitle)}>{content}</h1>
+        <H1 size={'xxl'} textColor={'green'} css={titleStyle}>
+          {children}
+        </H1>
       );
     case 2:
       return (
-        <h2 className={classNames('xl', styles.contentTitle)}>{content}</h2>
+        <H2 size={'xl'} textColor={'green'} css={titleStyle}>
+          {children}
+        </H2>
       );
     case 3:
       return (
-        <h3 className={classNames('l', styles.contentTitle)}>{content}</h3>
+        <H3 size={'l'} textColor={'green'} css={titleStyle}>
+          {children}
+        </H3>
       );
     default:
       return (
-        <h1 className={classNames('xl', styles.contentTitle)}>{content}</h1>
+        <H1 size={'xxl'} textColor={'green'} css={titleStyle}>
+          {children}
+        </H1>
       );
   }
 };

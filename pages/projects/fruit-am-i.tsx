@@ -61,8 +61,8 @@ const FruitAmI: NextPage = () => {
         <ImageBlock
           src="/images/projects/fruit-am-i/gifs/puzzle.gif"
           alt="puzzle"
-          width={347}
-          height={347}
+          width={300}
+          height={300}
         />
       </Content>
       <Link title="Play" href="https://huienlin.itch.io/fruit-am-i">

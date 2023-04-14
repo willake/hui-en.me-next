@@ -2,9 +2,11 @@ import styles from '../../styles/Home.module.scss';
 import React from 'react';
 import classNames from 'classnames';
 import { ProjectMeta } from '../../schema';
-import { server } from '../../config';
 import Link from 'next/link';
 import Image from 'next/image';
+import { styled } from 'styles';
+import { Box, Group, H2, HFlex, Text, VFlex } from 'styles/Common';
+import { BLACK, GREEN, SHADOW, WHITE } from 'styles/color';
 
 type Props = {
   meta: ProjectMeta;
@@ -13,9 +15,9 @@ type Props = {
 const PortfolioItem: React.FC<Props> = ({ meta }) => {
   return (
     <Link href={`/projects/${meta.route}`}>
-      <a title={meta.title} className={styles.portfolioItem}>
-        <div className={styles.portfolioItemBody}>
-          <div className={styles.protfolioBackground}>
+      <Card title={meta.title}>
+        <CardBody>
+          <Box css={{ width: '100%', zIndex: 5 }}>
             <Image
               alt={meta.title}
               width="1200"
@@ -23,26 +25,112 @@ const PortfolioItem: React.FC<Props> = ({ meta }) => {
               src={`/${meta.previewImageUrl}`}
               layout="responsive"
             />
-          </div>
-          <div className={styles.portfolioItemOverlay}></div>
-          <div className={styles.portfolioItemText}>
-            <h2 className={styles.portfolioItemTitle}>
-              <span className={classNames('m', 'colorBlack')}>
-                {meta.title}
-              </span>
-            </h2>
-          </div>
-        </div>
-        <div className={styles.portfolioItemTags}>
+          </Box>
+          <Overlay />
+          <OverlayTitle>
+            <H2
+              size={'m'}
+              textColor={'black'}
+              css={{ marginRight: '10px', fontWeight: 500 }}
+            >
+              {meta.title}
+            </H2>
+          </OverlayTitle>
+        </CardBody>
+        <Tags>
           {meta.tools.map((tool) => (
-            <div key={tool} className={styles.portfolioItemTag}>
-              <span className={classNames('m', 'colorWhite')}>{tool}</span>
-            </div>
+            <Tag key={tool}>
+              <Text
+                size={'m'}
+                textColor={'white'}
+                css={{
+                  letterSpacing: '0.5px',
+                  textAlign: 'center',
+                  fontWeight: 500,
+                }}
+              >
+                {tool}
+              </Text>
+            </Tag>
           ))}
-        </div>
-      </a>
+        </Tags>
+      </Card>
     </Link>
   );
 };
 
 export default PortfolioItem;
+
+const Card = styled('a', {
+  cursor: 'pointer',
+  position: 'relative',
+  width: '300px',
+  height: '150px',
+  marginBottom: '60px',
+  '@sm': {
+    width: '250px',
+    height: '125px',
+    margin: '10px 10px 40px 10px',
+  },
+  '@lg': {
+    width: '300px',
+    height: '150px',
+  },
+});
+
+const CardBody = styled(Group, {
+  width: '100%',
+  height: '100%',
+  overflow: 'hidden',
+  borderRadius: '5px',
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  boxShadow: `1px 1px 3px ${SHADOW}`,
+});
+
+const Overlay = styled(Box, {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  backgroundColor: BLACK,
+  opacity: 0.1,
+  zIndex: 10,
+  '@lg': {
+    opacity: 0.4,
+    transition: '0.3s ease-in',
+    '&:hover': {
+      opacity: 0,
+    },
+  },
+});
+
+const OverlayTitle = styled(VFlex, {
+  position: 'absolute',
+  justifyContent: 'center',
+  alignItems: 'flex-end',
+  bottom: 0,
+  left: 0,
+  width: '100%',
+  height: '20%',
+  backgroundColor: WHITE,
+  zIndex: 15,
+});
+
+const Tags = styled(HFlex, {
+  position: 'absolute',
+  top: '100%',
+  left: '5px',
+  width: '100%',
+  justifyContent: 'left',
+});
+
+const Tag = styled(Box, {
+  backgroundColor: GREEN,
+  borderRadius: '0 0 5px 5px',
+  padding: '5px 10px',
+  margin: '0 5px',
+  justifyContent: 'center',
+  alignItems: 'center',
+});

@@ -1,8 +1,7 @@
-import styles from '../../styles/About.module.scss';
 import React from 'react';
 import { Experience } from '../../schema';
 import ExperienceItem from './ExperienceItem';
-import classNames from 'classnames';
+import { H2, VFlexCenter } from 'styles/Common';
 
 type Props = {
   title: string;
@@ -11,11 +10,31 @@ type Props = {
 
 const ExperienceCategory: React.FC<Props> = ({ title, experiences }) => {
   return (
-    <div className={styles.experienceCategory}>
-      <h2 className={styles.experienceCategoryTitle}>
-        <span className={classNames('xl', 'colorBlack')}>{title}</span>
-      </h2>
-      <div className={styles.experienceCategoryContent}>
+    <VFlexCenter
+      css={{
+        width: '90%',
+        '@lg': {
+          maxWidth: '1000px',
+          flexDirection: 'row',
+          alignItems: 'flex-start',
+        },
+      }}
+    >
+      <H2
+        size={'xl'}
+        textColor={'black'}
+        css={{
+          margin: '20px 0px',
+          fontWeight: 400,
+          '@lg': {
+            flex: 1,
+            textAlign: 'left',
+          },
+        }}
+      >
+        {title}
+      </H2>
+      <VFlexCenter css={{ width: '100%', '@lg': { flex: 2 } }}>
         {experiences.map((experience) => (
           <ExperienceItem
             key={experience.title}
@@ -24,8 +43,8 @@ const ExperienceCategory: React.FC<Props> = ({ title, experiences }) => {
             details={experience.details}
           />
         ))}
-      </div>
-    </div>
+      </VFlexCenter>
+    </VFlexCenter>
   );
 };
 
