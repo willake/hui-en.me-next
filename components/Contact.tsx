@@ -90,9 +90,8 @@ const Link = styled('a', {
   position: 'relative',
   display: 'block',
   transition: '.2s ease-in',
+  margin: '15px 10px',
   '@lg': {
-    margin: '15px 10px',
-
     ':hover': {
       transform: 'scale(1.05)',
     },
