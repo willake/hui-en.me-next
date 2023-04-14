@@ -1,9 +1,17 @@
 import { FaGithub, FaItchIo, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import React from 'react';
-import { Box, Button, HFlex, Section, Text, TextSpan } from 'styles/Common';
+import {
+  Box,
+  Button,
+  Group,
+  HFlex,
+  Section,
+  Text,
+  TextSpan,
+} from 'styles/Common';
 import { IconType } from 'react-icons';
 import { styled } from 'styles';
-import { BLACK, DARK_GREEN, WHITE } from 'styles/color';
+import { BLACK, DARK_GREEN, GREEN, WHITE } from 'styles/color';
 
 const Contact: React.FC = () => {
   return (
@@ -32,18 +40,34 @@ const Contact: React.FC = () => {
       </Box>
       <HFlex>
         {contactInfos.map((info) => (
-          <Link
+          <Group
             key={info.id}
-            title={info.name}
-            href={info.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            css={{
+              transition: '.2s ease-in',
+              margin: '15px 10px',
+              '@lg': {
+                ':hover': {
+                  transform: 'scale(1.05)',
+                  color: GREEN,
+                },
+              },
+            }}
           >
-            {React.createElement(info.icon, {
-              size: '32',
-              color: BLACK,
-            })}
-          </Link>
+            <Link
+              title={info.name}
+              href={info.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {React.createElement(info.icon, {
+                size: '32',
+                color: BLACK,
+                style: {
+                  transition: '.2s ease-in',
+                },
+              })}
+            </Link>
+          </Group>
         ))}
       </HFlex>
     </Section>
@@ -91,27 +115,4 @@ const Link = styled('a', {
   display: 'block',
   transition: '.2s ease-in',
   margin: '15px 10px',
-  '@lg': {
-    ':hover': {
-      transform: 'scale(1.05)',
-    },
-  },
 });
-
-// .contactButtonLink {
-//   display: block;
-//   background-color: #0b2027;
-//   padding: 10px 20px;
-//   border-radius: 5px;
-
-//   @media screen and (min-width: $lg){
-//       transition: 0.2s ease;
-//   }
-
-//   &:hover {
-//       @media screen and (min-width: $lg){
-//           transform: scale(1.1);
-//           color: white;
-//       }
-//   }
-// }

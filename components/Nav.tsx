@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { Squash as Hamburger } from 'hamburger-react';
 import React, { useState } from 'react';
-import Link from 'next/link';
 import Menu from './Nav/Menu';
-import classNames from 'classnames';
 import { styled } from 'styles';
-import { Box, Flex, H1, HoverableBox } from 'styles/Common';
+import { Box, H1, HoverableBox } from 'styles/Common';
+import textStyles from 'styles/text';
+import { textColors } from 'styles/color';
 
 const Nav: React.FC = () => {
   const [isOpen, setOpen] = useState(false);
@@ -20,17 +20,19 @@ const Nav: React.FC = () => {
     <NavBox>
       <HoverableBox css={{ width: '64px', height: '64px' }}>
         <Link href="/">
-          <a>
-            <Image src="/images/logo.svg" alt="logo" layout="fill" />
-          </a>
+          <Image src="/images/logo.svg" alt="logo" layout="fill" />
         </Link>
       </HoverableBox>
-      <Box>
-        <H1 textColor={'white'} size={'xl'}>
-          Hui En Li
-        </H1>
-      </Box>
-      <Box css={{ marginLeft: 'auto', marginRight: '10px' }}>
+      <H1 textColor={'white'} size={'xl'}>
+        Hui En Li
+      </H1>
+      <Box
+        css={{
+          marginLeft: 'auto',
+          marginRight: '10px',
+          '@lg': { display: 'none' },
+        }}
+      >
         <Hamburger toggled={isOpen} toggle={setOpen} />
       </Box>
       <Box
@@ -41,14 +43,14 @@ const Nav: React.FC = () => {
         }}
       >
         <List>
-          <ListItem className={'hoverable'}>
-            <Link href="/">
-              <a className={classNames('xl', 'colorWhite')}>Home</a>
+          <ListItem>
+            <Link href="/" size={'xl'} textColor={'white'}>
+              Home
             </Link>
           </ListItem>
-          <ListItem className={'hoverable'}>
-            <Link href="/about">
-              <a className={classNames('xl', 'colorWhite')}>About Me</a>
+          <ListItem>
+            <Link href="/about" size={'xl'} textColor={'white'}>
+              About Me
             </Link>
           </ListItem>
         </List>
@@ -80,6 +82,17 @@ const List = styled('ul', {
 });
 
 const ListItem = styled('li', {
+  transition: '.2s ease-in',
+  '&:hover': {
+    transform: 'scale(1.1)',
+  },
   listStyle: 'none',
   margin: '0px 30px',
+});
+
+const Link = styled('a', {
+  variants: {
+    size: textStyles,
+    textColor: textColors,
+  },
 });
