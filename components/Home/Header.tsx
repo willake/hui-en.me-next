@@ -28,6 +28,7 @@ const Header: React.FC = () => {
           loop={true}
           muted={true}
           preload="preload"
+          css={{ userSelect: 'none' }}
         >
           <source src="/videos/portfolio.mp4" type="video/mp4" />
           <source src="/videos/portfolio.webm" type="video/webm" />

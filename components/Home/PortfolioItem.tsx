@@ -62,6 +62,7 @@ const PortfolioItem: React.FC<Props> = ({ meta }) => {
 export default PortfolioItem;
 
 const Card = styled('a', {
+  cursor: 'pointer',
   position: 'relative',
   width: '300px',
   height: '150px',
@@ -69,7 +70,7 @@ const Card = styled('a', {
   '@sm': {
     width: '250px',
     height: '125px',
-    margin: '10 10 40 10',
+    margin: '10px 10px 40px 10px',
   },
   '@lg': {
     width: '300px',
@@ -97,9 +98,9 @@ const Overlay = styled(Box, {
   opacity: 0.1,
   zIndex: 10,
   '@lg': {
-    opactiy: 0.5,
-    ':hover': {
-      transition: '0.3s ease-in',
+    opacity: 0.4,
+    transition: '0.3s ease-in',
+    '&:hover': {
       opacity: 0,
     },
   },

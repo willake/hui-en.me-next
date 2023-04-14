@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProjectMeta } from '../../schema';
 import PortfolioItem from './PortfolioItem';
-import { H2, VFlex } from 'styles/Common';
+import { H2, VFlex, VFlexCenter } from 'styles/Common';
 import { styled } from 'styles';
 
 type Props = {
@@ -26,9 +26,7 @@ const PortfolioCategory: React.FC<Props> = ({ title, projects }) => {
 
 export default PortfolioCategory;
 
-const Row = styled(VFlex, {
-  alignItems: 'center',
-  justifyContent: 'center',
+const Row = styled(VFlexCenter, {
   '@sm': {
     maxWidth: 'calc(100% - 80px)',
     flexDirection: 'row',
@@ -38,6 +36,5 @@ const Row = styled(VFlex, {
   },
   '@lg': {
     maxWidth: '1200px',
-    padding: '0 40px',
   },
 });

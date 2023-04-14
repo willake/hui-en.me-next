@@ -1,6 +1,6 @@
 import { styled } from 'styles';
 import textStyles from './text';
-import { textColors } from './color';
+import { GREEN, textColors } from './color';
 
 export const Box = styled('div', {});
 
@@ -95,6 +95,8 @@ export const Button = styled('a', {
   placeItems: 'center',
   transition: '.2s ease-in',
   userSelect: 'none',
+  backgroundColor: GREEN,
+  borderRadius: '10px',
   '&:hover': {
     transform: 'scale(1.1)',
   },

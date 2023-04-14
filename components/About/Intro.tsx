@@ -2,7 +2,7 @@ import styles from '../../styles/About.module.scss';
 import React from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
-import { Box, Button, Section, Text } from 'styles/Common';
+import { Box, Button, Section, Text, TextSpan } from 'styles/Common';
 import { styled } from 'styles';
 import { GREEN, textColors } from 'styles/color';
 
@@ -44,18 +44,18 @@ const Intro: React.FC<IntroProps> = ({ intro }) => {
         ))}
       </Box>
       <Button
+        title="CV"
+        href="/cv.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
         css={{
           margin: '10px 0',
           padding: '10px 15px',
-          backgroundColor: GREEN,
-          borderRadius: '10px',
         }}
       >
-        <a title="CV" href="/cv.pdf" target="_blank" rel="noopener noreferrer">
-          <Text size={'l'} textColor={'white'}>
-            CV PDF
-          </Text>
-        </a>
+        <TextSpan size={'l'} textColor={'white'}>
+          CV PDF
+        </TextSpan>
       </Button>
     </Section>
   );

@@ -18,7 +18,7 @@ const Portfolio: React.FC<Props> = ({ professionals, sides }) => {
         justifyContent: 'center',
         alignItems: 'center',
         paddingTop: '5px',
-        paddingVottom: '20px',
+        paddingBottom: '20px',
         backgroundColor: DARK_GRAY,
       }}
     >
