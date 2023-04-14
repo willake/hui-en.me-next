@@ -7,7 +7,7 @@ export const aboutData: AboutAPIData = {
         As a programmer with professional experience in developing products with Unity for almost three years, 
         I can implement many kinds of gameplay features by improving graphics, 
         designing code architecture, and optimizing games efficiently`,
-    `Now I am learning making computer games from scratch with C++. Console games would be my next goal to learn.`,
+    `Currently studying M.S. in Game Technology at Utrecht University, Netherlands.`,
   ],
   programmingSkill: [
     `C++`,

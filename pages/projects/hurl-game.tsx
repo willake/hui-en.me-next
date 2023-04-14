@@ -26,7 +26,7 @@ const HurlGame: NextPage = () => {
     keywords:
       'Escape the Room, 2D Game, Flash Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
     size: '2',
-    language: 'Unity C# C#',
+    language: 'Unity C#',
     role: 'Game Programmer',
   };
 

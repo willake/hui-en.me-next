@@ -11,6 +11,11 @@ type IntroProps = {
 };
 
 const Intro: React.FC<IntroProps> = ({ intro }) => {
+  var id = 0;
+  const getIncrementalTextId = () => {
+    id++;
+    return id.toString();
+  };
   return (
     <Section
       id="intro"
@@ -36,7 +41,10 @@ const Intro: React.FC<IntroProps> = ({ intro }) => {
       </Box>
       <Box css={{ maxWidth: '800px' }}>
         {intro.map((text) => (
-          <Box css={{ textAlign: 'center', margin: '10px 0', lineHeight: 1.5 }}>
+          <Box
+            key={getIncrementalTextId()}
+            css={{ textAlign: 'center', margin: '10px 0', lineHeight: 1.5 }}
+          >
             <Text size={'l'} textColor={'black'}>
               {text}
             </Text>
