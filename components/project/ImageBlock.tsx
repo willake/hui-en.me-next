@@ -1,6 +1,6 @@
-import React, { CSSProperties } from 'react';
-import styles from '../../styles/project.module.scss';
+import React from 'react';
 import Image from 'next/image';
+import { Box, Group } from 'styles/Common';
 
 type Props = {
   alt: string;
@@ -11,7 +11,19 @@ type Props = {
 
 const ImageBlock: React.FC<Props> = ({ alt, src, width, height }) => {
   return (
-    <div className={styles.contentImage}>
+    <Group
+      css={{
+        width: 'auto',
+        maxWidth: '100%',
+        margin: '10px 0',
+        boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.15)',
+        alignSelf: 'center',
+        '@lg': {
+          width: 'auto',
+          maxWidth: '600px',
+        },
+      }}
+    >
       <Image
         alt={alt}
         src={src}
@@ -19,7 +31,7 @@ const ImageBlock: React.FC<Props> = ({ alt, src, width, height }) => {
         height={height}
         layout="intrinsic"
       />
-    </div>
+    </Group>
   );
 };
 

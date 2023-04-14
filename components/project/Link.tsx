@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from '../../styles/project.module.scss';
-import classNames from 'classnames';
+import { Button, TextSpan } from 'styles/Common';
 
 type Props = {
   title: string;
@@ -9,17 +8,21 @@ type Props = {
 
 const Link: React.FC<Props> = ({ title, href, children }) => {
   return (
-    <div className={classNames(styles.contentLink, 'hoverable')}>
-      <a
-        className={classNames('l', 'colorWhite')}
-        title={title}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+    <Button
+      title={title}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      css={{
+        margin: '10px 0',
+        padding: '10px 15px',
+        borderRadius: '10px',
+      }}
+    >
+      <TextSpan size={'l'} textColor={'white'}>
         {children}
-      </a>
-    </div>
+      </TextSpan>
+    </Button>
   );
 };
 

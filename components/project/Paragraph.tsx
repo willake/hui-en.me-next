@@ -1,13 +1,23 @@
-import classNames from 'classnames';
 import React from 'react';
-import styles from '../../styles/project.module.scss';
+import { styled } from 'styles';
+import textStyles from 'styles/text';
+import { textColors } from 'styles/color';
 
 const Paragraph: React.FC = ({ children }) => {
   return (
-    <p className={classNames(styles.contentParagraph, 'l', 'colorBlack')}>
+    <P size={'l'} textColor={'black'}>
       {children}
-    </p>
+    </P>
   );
 };
 
 export default Paragraph;
+
+const P = styled('p', {
+  marginTop: 0,
+  lineHeight: 1.5,
+  variants: {
+    size: textStyles,
+    textColor: textColors,
+  },
+});
