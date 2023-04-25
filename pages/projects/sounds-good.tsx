@@ -9,6 +9,7 @@ import Heading from '../../components/project/Heading';
 import Paragraph from '../../components/project/Paragraph';
 import ImageBlock from '../../components/project/ImageBlock';
 import Link from '../../components/project/Link';
+import InlineLink from 'components/project/InlineLink';
 
 const SoundsGood: NextPage = () => {
   let data: ProjectArticle = {
@@ -60,6 +61,9 @@ const SoundsGood: NextPage = () => {
           research structure was not well-defined, and the results were not
           clear, the team had a great experience developing the game.
         </Paragraph>
+        <InlineLink title="Paper" href="/sounds_good.pdf">
+          Paper
+        </InlineLink>
         <Paragraph>
           In this game, I developed the main gameplay features, UI management
           system, and a file saving system to save records and collect data for
@@ -73,9 +77,6 @@ const SoundsGood: NextPage = () => {
           height={336}
         />
       </Content>
-      <Link title="Paper" href="/sounds_good.pdf">
-        Paper
-      </Link>
       <Link title="Play" href="https://huienlin.itch.io/sounds-good">
         Play
       </Link>
