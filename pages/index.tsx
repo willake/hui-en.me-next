@@ -14,7 +14,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
   return (
     <>
       <Meta
-        title="Hui-En Lin | Game Programmer Portfolio"
+        title="Hui En Lin | Game Programmer Portfolio"
         description="
       About Me: I am a communicative programmer with a great deal of experience in collaborating with people from different roles. 
       I can think from more than one perspective and make collaboration more efficient. 

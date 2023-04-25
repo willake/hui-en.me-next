@@ -9,4 +9,8 @@ module.exports = {
   //     '/': { page: '/' }
   //   }
   // },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
 };

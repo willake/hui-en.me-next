@@ -1,6 +1,4 @@
-import styles from '../../styles/About.module.scss';
 import React from 'react';
-import classNames from 'classnames';
 import { Box, Text, VFlex } from 'styles/Common';
 import { WHITE } from 'styles/color';
 

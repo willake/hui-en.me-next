@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { AiOutlineClose } from 'react-icons/ai';
 import { VFlex } from 'styles/Common';
 import { styled } from 'styles';
-import { GREEN, textColors } from 'styles/color';
+import { GREEN, WHITE, textColors } from 'styles/color';
 import textStyles from 'styles/text';
 
 type Props = {
@@ -26,14 +26,11 @@ const Menu: React.FC<Props> = ({ isOpen, closeMenu }) => {
           backgroundColor: GREEN,
         }}
       >
-        <div className={styles.menuHeader}>
-          <div
-            onClick={closeMenu}
-            className={classNames(styles.closeButton, 'colorWhite')}
-          >
+        <MenuHeader>
+          <CloseButton onClick={closeMenu}>
             <AiOutlineClose size={46} />
-          </div>
-        </div>
+          </CloseButton>
+        </MenuHeader>
         <List>
           <ListItem>
             <Link href="/" onClick={closeMenu} size={'xl'} textColor={'white'}>
@@ -83,4 +80,22 @@ const Link = styled('a', {
     size: textStyles,
     textColor: textColors,
   },
+});
+
+const MenuHeader = styled('div', {
+  width: '100%',
+  height: '70px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+});
+
+const CloseButton = styled('div', {
+  margin: '0 10px',
+  width: '48px',
+  height: '48px',
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginLeft: 'auto',
+  color: WHITE,
 });
