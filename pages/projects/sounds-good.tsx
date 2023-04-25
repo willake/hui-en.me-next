@@ -15,16 +15,13 @@ const SoundsGood: NextPage = () => {
     id: 11,
     type: 'Side',
     title: 'Sounds Good',
-    description: `Escape The Room is the first game I have ever created. 
-        This type of game was popular when I was a child. 
-        The player’s goal is to escape an enclosed room by solving puzzles. 
-        When I built this game, I knew very little about programming, and it was hard to develop at first. 
-        But I gradually found that programming is an enjoyable activity. 
-        For me, solving programming problems is like solving puzzles in a game. 
-        I also designed puzzles and drew art materials by myself. 
-        These experiences gave me plenty of enjoyment.`,
+    description: `Sounds Good is a final student project for a course in Sound and Music
+    Technology at Utrecht University. The project aimed to research
+    whether it's possible to create a game that can deliver information
+    correctly via visual and audio cues so that visually impaired people
+    can also play it.`,
     keywords:
-      'Escape the Room, 2D Game, Flash Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
+      'Sounds Good, 2D Game, Fighting Game, Game Programmer, Hui En Lin, Hui En, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
     size: '7',
     language: 'Unity C#',
     role: 'Game Programmer',

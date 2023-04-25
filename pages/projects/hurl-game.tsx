@@ -16,16 +16,16 @@ const HurlGame: NextPage = () => {
     id: 12,
     type: 'Side',
     title: 'Hurl Game',
-    description: `Escape The Room is the first game I have ever created. 
-        This type of game was popular when I was a child. 
-        The player’s goal is to escape an enclosed room by solving puzzles. 
-        When I built this game, I knew very little about programming, and it was hard to develop at first. 
-        But I gradually found that programming is an enjoyable activity. 
-        For me, solving programming problems is like solving puzzles in a game. 
-        I also designed puzzles and drew art materials by myself. 
-        These experiences gave me plenty of enjoyment.`,
+    description: `Hurl Game is a game for game jam. I teamed up with another programmer
+    to attend Weekly Game Jam on itch.io with the theme of "throwing." Our
+    game allows players to use the mouse to throw a ball at a wall to
+    collect score. The motivation for this project is inspired by a talk
+    named "Juice It or Lose It", which emphasized the importance of adding
+    sound and visual effects to create a more immersive player experience.
+    With this in mind, we set out to create a game that was not only fun
+    but also engaging and exciting.`,
     keywords:
-      'Escape the Room, 2D Game, Flash Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
+      'Hurl Game, Game Jam Project, Weekly Game Jam, 2D Game, Flash Game, Game Programmer, Hui En Lin, Hui En, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
     size: '2',
     language: 'Unity C#',
     role: 'Game Programmer',
