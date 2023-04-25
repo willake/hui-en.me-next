@@ -25,7 +25,7 @@ const TeruTeruBeru: NextPage = () => {
         These experiences gave me plenty of enjoyment.`,
     keywords:
       'Escape the Room, 2D Game, Flash Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
-    size: '1',
+    size: '3',
     language: 'Unity C#',
     role: 'Game Programmer',
   };

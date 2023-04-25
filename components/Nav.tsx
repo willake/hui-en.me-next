@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
         </Link>
       </HoverableBox>
       <H1 textColor={'white'} size={'xl'}>
-        Hui En Li
+        Hui En Lin
       </H1>
       <Box
         css={{
