@@ -47,17 +47,28 @@ const SoundsGood: NextPage = () => {
       <Content>
         <Heading level={2}>Introduction</Heading>
         <ImageBlock
-          src="/images/projects/sounds-good/gifs/battle.gif"
-          alt="battle"
-          width={600}
-          height={336}
-        />
-        <ImageBlock
           src="/images/projects/sounds-good/gifs/smart-ai.gif"
           alt="smart-ai"
           width={600}
           height={336}
         />
+        <Paragraph>
+          Sounds Good is a final student project for a course in Sound and Music
+          Technology at Utrecht University. The project aimed to research
+          whether it's possible to create a game that can deliver information
+          correctly via visual and audio cues so that visually impaired people
+          can also play it. The team invited 50 people to participate in the
+          experiment and divided them into two groups: one group played the game
+          with visuals, and the other played it only with audio. Although the
+          research structure was not well-defined, and the results were not
+          clear, the team had a great experience developing the game.
+        </Paragraph>
+        <Paragraph>
+          In this game, I developed the main gameplay features, UI management
+          system, and a file saving system to save records and collect data for
+          the experiment. The project was an exciting experience for the team,
+          and we learned a lot from it.
+        </Paragraph>
         <ImageBlock
           src="/images/projects/sounds-good/gifs/record.gif"
           alt="record"
@@ -65,6 +76,9 @@ const SoundsGood: NextPage = () => {
           height={336}
         />
       </Content>
+      <Link title="Paper" href="/sounds_good.pdf">
+        Paper
+      </Link>
       <Link title="Play" href="https://huienlin.itch.io/sounds-good">
         Play
       </Link>
