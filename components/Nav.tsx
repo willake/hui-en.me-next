@@ -18,9 +18,17 @@ const Nav: React.FC = () => {
 
   return (
     <NavBox>
-      <HoverableBox css={{ width: '64px', height: '64px' }}>
+      <HoverableBox
+        css={{ width: '98.56px', height: '64px', padding: '10px 15.4px' }}
+      >
         <Link href="/">
-          <Image src="/images/logo.svg" alt="logo" layout="fill" />
+          <Image
+            src="/images/logo.png"
+            alt="logo"
+            width={'258px'}
+            height={'167px'}
+            layout="responsive"
+          />
         </Link>
       </HoverableBox>
       <H2 textColor={'white'} size={'xl'}>
@@ -95,4 +103,5 @@ const Link = styled('a', {
     size: textStyles,
     textColor: textColors,
   },
+  display: 'block',
 });
