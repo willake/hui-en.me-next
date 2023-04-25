@@ -3,7 +3,7 @@ import { Squash as Hamburger } from 'hamburger-react';
 import React, { useState } from 'react';
 import Menu from './Nav/Menu';
 import { styled } from 'styles';
-import { Box, H1, HoverableBox } from 'styles/Common';
+import { Box, H2, HoverableBox } from 'styles/Common';
 import textStyles from 'styles/text';
 import { textColors } from 'styles/color';
 
@@ -23,9 +23,9 @@ const Nav: React.FC = () => {
           <Image src="/images/logo.svg" alt="logo" layout="fill" />
         </Link>
       </HoverableBox>
-      <H1 textColor={'white'} size={'xl'}>
+      <H2 textColor={'white'} size={'xl'}>
         Hui En Lin
-      </H1>
+      </H2>
       <Box
         css={{
           marginLeft: 'auto',

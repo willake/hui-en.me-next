@@ -23,14 +23,17 @@ const Meta: React.FC<MetaProps> = ({ title, keywords, description }) => {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="author" content="Hui En Lin" />
       <meta property="og:title" content={title} />
-      <meta property="og:image" content="https://hui-en.me/images/cover.png" />
+      <meta property="og:image" content="https://hui-en.me/images/banner.jpg" />
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content="hui-en.me" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://hui-en.me" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@hui_gamedev" />
-      <meta name="twitter:image" content="https://hui-en.me/images/cover.png" />
+      <meta
+        name="twitter:image"
+        content="https://hui-en.me/images/banner.jpg"
+      />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:site" content="https://www.hui-en.me/" />

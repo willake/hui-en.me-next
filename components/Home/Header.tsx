@@ -1,6 +1,4 @@
-import styles from '../../styles/Home.module.scss';
 import React, { useRef } from 'react';
-import classNames from 'classnames';
 import { isMobile } from 'react-device-detect';
 import { styled } from 'styles';
 import { Box, H1, H2 } from 'styles/Common';
@@ -59,7 +57,7 @@ const Header: React.FC = () => {
               userSelect: 'none',
             }}
           >
-            Gamep Programmer
+            Game Programmer
           </H2>
         </OverlayTitle>
       </Content>
