@@ -9,6 +9,7 @@ import Heading from '../../components/project/Heading';
 import Paragraph from '../../components/project/Paragraph';
 import ImageBlock from '../../components/project/ImageBlock';
 import Link from '../../components/project/Link';
+import InlineLink from 'components/project/InlineLink';
 
 const FruitAmI: NextPage = () => {
   let data: ProjectArticle = {
@@ -52,6 +53,26 @@ const FruitAmI: NextPage = () => {
           width={300}
           height={300}
         />
+        <Paragraph>
+          This is a game for Weekly Game Jam 249 and the subject is Mysterious
+          Fruit. It was made in 6 days including game design, art, and
+          programming. We are inspired by Rusty Lake which is a well-known
+          puzzle game. We made all this from scratch from the first day of the
+          game jam without pre-developed tools and discussions.
+        </Paragraph>
+        <Paragraph>
+          In addition, I wrote a devlog for this project and a demo project for
+          the core system in this game.
+        </Paragraph>
+        <InlineLink title="DevLog" href="https://huienlin.itch.io/fruit-am-i">
+          DevLog
+        </InlineLink>
+        <InlineLink
+          title="Demo Project"
+          href="https://github.com/willake/reaction-system-demo"
+        >
+          Demo Project
+        </InlineLink>
         <ImageBlock
           src="/images/projects/fruit-am-i/gifs/switch-scene.gif"
           alt="switch-scene"
