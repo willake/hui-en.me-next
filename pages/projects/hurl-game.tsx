@@ -49,13 +49,14 @@ const HurlGame: NextPage = () => {
         <Heading level={2}>Introduction</Heading>
         <Paragraph>
           Hurl Game is a game for game jam. I teamed up with another programmer
-          to attend Weekly Game Jam on itch.io with the theme of "throwing." Our
-          game allows players to use the mouse to throw a ball at a wall to
-          collect score. The motivation for this project is inspired by a talk
-          named "Juice It or Lose It", which emphasized the importance of adding
-          sound and visual effects to create a more immersive player experience.
-          With this in mind, we set out to create a game that was not only fun
-          but also engaging and exciting.
+          to attend Weekly Game Jam on itch.io with the theme of
+          &quot;throwing.&quot; Our game allows players to use the mouse to
+          throw a ball at a wall to collect score. The motivation for this
+          project is inspired by a talk named &quot;Juice It or Lose It&quot;,
+          which emphasized the importance of adding sound and visual effects to
+          create a more immersive player experience. With this in mind, we set
+          out to create a game that was not only fun but also engaging and
+          exciting.
         </Paragraph>
         <ImageBlock
           src="/images/projects/hurl-game/intro.png"
@@ -81,11 +82,11 @@ const HurlGame: NextPage = () => {
           at a wall, which increases their score. We also incorporated a fever
           bar that players can fill by making combos. Once the fever bar is
           full, the game enters fever mode, where the score per hit
-          significantly increases. Our game's scoring system is similar to that
-          of a basketball arcade, where players need to collect enough points to
-          enter the next level. Overall, we're proud of what we were able to
-          accomplish in such a short amount of time and hope players enjoy our
-          game.
+          significantly increases. Our game&apos;s scoring system is similar to
+          that of a basketball arcade, where players need to collect enough
+          points to enter the next level. Overall, we&apos;re proud of what we
+          were able to accomplish in such a short amount of time and hope
+          players enjoy our game.
         </Paragraph>
         <ImageBlock
           src="/images/projects/hurl-game/gifs/fever.gif"
