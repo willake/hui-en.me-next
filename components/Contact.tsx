@@ -99,7 +99,7 @@ const contactInfos: ContactInfo[] = [
   {
     id: 2,
     name: 'Twitter Contact',
-    url: 'https://twitter.com/WillakeLin/',
+    url: 'https://twitter.com/hui_gamedev/',
     icon: FaTwitter,
   },
   {

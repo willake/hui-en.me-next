@@ -1,8 +1,6 @@
-import styles from '../../styles/About.module.scss';
 import React from 'react';
 import { Education } from '../../schema';
 import EducationItem from './EducationItem';
-import classNames from 'classnames';
 import { H2, VFlexCenter } from 'styles/Common';
 
 type Props = {

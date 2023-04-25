@@ -1,6 +1,4 @@
 import React from 'react';
-import styles from '../../styles/project.module.scss';
-import classNames from 'classnames';
 import { Section, Text } from 'styles/Common';
 
 type Props = {

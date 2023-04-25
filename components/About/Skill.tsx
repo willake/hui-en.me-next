@@ -1,7 +1,5 @@
-import styles from '../../styles/About.module.scss';
 import React from 'react';
 import SkillSet from './SkillSet';
-import classNames from 'classnames';
 import { Section } from 'styles/Common';
 
 type SkillProps = {

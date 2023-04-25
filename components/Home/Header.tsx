@@ -1,6 +1,4 @@
-import styles from '../../styles/Home.module.scss';
 import React, { useRef } from 'react';
-import classNames from 'classnames';
 import { isMobile } from 'react-device-detect';
 import { styled } from 'styles';
 import { Box, H1, H2 } from 'styles/Common';
@@ -41,6 +39,7 @@ const Header: React.FC = () => {
             css={{
               letterSpacing: '1px',
               fontWeight: 500,
+              userSelect: 'none',
               '@sm': {
                 marginTop: '20px',
                 marginVottom: '10px',
@@ -52,9 +51,13 @@ const Header: React.FC = () => {
           <H2
             size={'xxl'}
             textColor={'white'}
-            css={{ letterSpacing: '0.5px', fontWeight: 500 }}
+            css={{
+              letterSpacing: '0.5px',
+              fontWeight: 500,
+              userSelect: 'none',
+            }}
           >
-            Gameplay Programmer
+            Game Programmer
           </H2>
         </OverlayTitle>
       </Content>

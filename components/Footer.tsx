@@ -1,6 +1,4 @@
-import styles from '../styles/Footer.module.scss';
 import React from 'react';
-import classNames from 'classnames';
 import { styled } from 'styles';
 import { H2, VFlex } from 'styles/Common';
 import { DARK_GREEN } from 'styles/color';

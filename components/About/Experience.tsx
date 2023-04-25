@@ -1,8 +1,5 @@
-import styles from '../../styles/About.module.scss';
 import React from 'react';
-import classNames from 'classnames';
 import ExperienceCategory from './ExperienceCategory';
-import EducationItem from './EducationItem';
 import { Experience, Education } from '../../schema';
 import EducationCategory from './EducationCategory';
 import { Section } from 'styles/Common';

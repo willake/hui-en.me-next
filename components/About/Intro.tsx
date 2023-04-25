@@ -1,7 +1,5 @@
-import styles from '../../styles/About.module.scss';
 import React from 'react';
 import Image from 'next/image';
-import classNames from 'classnames';
 import { Box, Button, Section, Text, TextSpan } from 'styles/Common';
 import { styled } from 'styles';
 import { GREEN, textColors } from 'styles/color';
