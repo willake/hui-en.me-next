@@ -53,12 +53,12 @@ const TeruTeruBeru: NextPage = () => {
           height={338}
         />
         <Paragraph>
-          Teru Teru Beru is a game developed by a team of three people,
-          consisting of two programmers and one 2D artist. The game was created
-          for AardJam on Itch.io using Unity and was completed within three
-          days. Despite the short development time, we very enjoyed it. The
-          game's code is also well-structured, which makes it easy to work with
-          and modify in the future.
+          TeruTeruBeru is a game developed by a team of three people, consisting
+          of two programmers and one 2D artist. The game was created for AardJam
+          on Itch.io using Unity and was completed within three days. Despite
+          the short development time, we very enjoyed it. The game's code is
+          also well-structured, which makes it easy to work with and modify in
+          the future.
         </Paragraph>
         <Paragraph>
           The objective of the game is to build a tower as high as possible. The
