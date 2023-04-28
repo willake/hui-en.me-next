@@ -53,7 +53,7 @@ const SoundsGood: NextPage = () => {
         <Paragraph>
           Sounds Good is a final student project for a course in Sound and Music
           Technology at Utrecht University. The project aimed to research
-          whether it's possible to create a game that can deliver information
+          whether it is possible to create a game that can deliver information
           correctly via visual and audio cues so that visually impaired people
           can also play it. The team invited 50 people to participate in the
           experiment and divided them into two groups: one group played the game

@@ -38,15 +38,23 @@ const Meta: React.FC<MetaProps> = ({ title, keywords, description }) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:site" content="https://www.hui-en.me/" />
       <link
-        rel="shortcut icon"
-        href="https://hui-en.me/favicon.ico"
-        type="image/x-icon"
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
       />
       <link
         rel="icon"
-        href="https://hui-en.me/favicon.ico"
-        type="image/x-icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
       />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
     </Head>
   );
 };
