@@ -64,7 +64,10 @@ const FruitAmI: NextPage = () => {
           In addition, I wrote a devlog for this project and a demo project for
           the core system in this game.
         </Paragraph>
-        <InlineLink title="DevLog" href="https://huienlin.itch.io/fruit-am-i">
+        <InlineLink
+          title="DevLog"
+          href="https://huienlin.itch.io/fruit-am-i/devlog/373700/the-development-of-fruit-am-i"
+        >
           DevLog
         </InlineLink>
         <InlineLink
