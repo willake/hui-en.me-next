@@ -15,16 +15,14 @@ const TeruTeruBeru: NextPage = () => {
     id: 10,
     type: 'Side',
     title: 'TeruTeruBeru',
-    description: `Escape The Room is the first game I have ever created. 
-        This type of game was popular when I was a child. 
-        The player’s goal is to escape an enclosed room by solving puzzles. 
-        When I built this game, I knew very little about programming, and it was hard to develop at first. 
-        But I gradually found that programming is an enjoyable activity. 
-        For me, solving programming problems is like solving puzzles in a game. 
-        I also designed puzzles and drew art materials by myself. 
-        These experiences gave me plenty of enjoyment.`,
+    description: `TeruTeruBeru is a game developed by a team of three people, consisting
+    of two programmers and one 2D artist. The game was created for AardJam
+    on Itch.io using Unity and was completed within three days. Despite
+    the short development time, we very enjoyed it. The game&apos;s code
+    is also well-structured, which makes it easy to work with and modify
+    in the future.`,
     keywords:
-      'Escape the Room, 2D Game, Flash Game, Game Programmer, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
+      '2D Game, WebGL Game, Game Programmer, Hui En Lin, Willake, Lin Hui En, Game Development, Game Portfolio, Portfolio',
     size: '3',
     language: 'Unity C#',
     role: 'Game Programmer',
