@@ -7,7 +7,7 @@ export const aboutData: AboutAPIData = {
         As a programmer with professional experience in developing products with Unity for almost three years, 
         I can implement many kinds of gameplay features by improving graphics, 
         designing code architecture, and optimizing games efficiently`,
-    `Currently studying M.S. in Game Technology at Utrecht University, Netherlands.`,
+    `Currently I am a master's student studying Game & Media Technology at Utrecht University, Netherlands.`,
   ],
   programmingSkill: [
     `C++`,
@@ -31,7 +31,7 @@ export const aboutData: AboutAPIData = {
   workExperience: [
     {
       title: `Unity Software Engineer`,
-      subtitle: `Seekrtech, Taichung, Taiwan, Jan. 2019 - June. 2021`,
+      subtitle: `Seekrtech, Taiwan, Jan. 2019 - June. 2021`,
       details: [
         `Worked on a mobile to-do list app with gamification feature in a cross-functional team`,
         `Implemented all game mechanics in C# with UniRx, designed code architecture and database schema`,
@@ -41,7 +41,7 @@ export const aboutData: AboutAPIData = {
     },
     {
       title: `Front-End Engineer (Internship)`,
-      subtitle: `Seekrtech, Taichung, Taiwan, Jul. 2017 - Sep. 2017 / Jul. 2018 - Sep. 2018`,
+      subtitle: `Seekrtech, Taiwan, Jul. 2017 - Sep. 2017 / Jul. 2018 - Sep. 2018`,
       details: [
         `Developed several websites for company and products with HTML, CSS, and JavaScript`,
         `Refactored browser extension, developed new features, and connected server APIs, increasing number of 
