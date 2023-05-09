@@ -51,7 +51,7 @@ const Intro: React.FC<IntroProps> = ({ intro }) => {
       </Box>
       <Button
         title="CV"
-        href="/cv.pdf"
+        href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         css={{
@@ -60,7 +60,7 @@ const Intro: React.FC<IntroProps> = ({ intro }) => {
         }}
       >
         <TextSpan size={'l'} textColor={'white'}>
-          CV PDF
+          Resume PDF
         </TextSpan>
       </Button>
     </Section>
