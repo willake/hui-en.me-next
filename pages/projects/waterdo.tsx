@@ -1,14 +1,14 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { ProjectArticle } from '../../schema';
-import Meta from '../../components/Meta';
-import Banner from '../../components/project/Banner';
-import About from '../../components/project/About';
-import Content from '../../components/project/Content';
-import Heading from '../../components/project/Heading';
-import Paragraph from '../../components/project/Paragraph';
-import VideoBlock from '../../components/project/VideoBlock';
-import Link from '../../components/project/Link';
+import Meta from 'components/Meta';
+import Banner from 'components/Project/Banner';
+import About from 'components/Project/About';
+import Content from 'components/Project/Content';
+import Heading from 'components/Project/Heading';
+import Paragraph from 'components/Project/Paragraph';
+import VideoBlock from 'components/Project/VideoBlock';
+import Link from 'components/Project/Link';
 
 const WaterDo: NextPage = () => {
   let data: ProjectArticle = {
