@@ -19,6 +19,13 @@ export const homeData: HomeAPIData = {
   ],
   sideProjects: [
     {
+      id: 13,
+      route: 'snowball-game',
+      title: 'Snowball Game',
+      previewImageUrl: 'images/projects/snowball-game/cover.jpg',
+      tools: ['Unity', 'C#', 'Research'],
+    },
+    {
       id: 9,
       route: 'fruit-am-i',
       title: 'Fruit Am I',

@@ -62,6 +62,12 @@ const FruitAmI: NextPage = () => {
           the core system in this game.
         </Paragraph>
         <InlineLink
+          title="PlayOnItchIo"
+          href="https://huienlin.itch.io/fruit-am-i"
+        >
+          Play on Itch.io
+        </InlineLink>
+        <InlineLink
           title="DevLog"
           href="https://huienlin.itch.io/fruit-am-i/devlog/373700/the-development-of-fruit-am-i"
         >
