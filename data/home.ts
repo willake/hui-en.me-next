@@ -19,6 +19,13 @@ export const homeData: HomeAPIData = {
   ],
   sideProjects: [
     {
+      id: 14,
+      route: 'vreactable',
+      title: 'VReactable',
+      previewImageUrl: 'images/projects/vreactable/cover.png',
+      tools: ['Python', 'Resonite', 'Research'],
+    },
+    {
       id: 13,
       route: 'snowball-game',
       title: 'Snowball Game',
