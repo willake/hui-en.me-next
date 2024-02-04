@@ -11,9 +11,9 @@ import ImageBlock from 'components/Project/ImageBlock';
 import Link from 'components/Project/Link';
 import InlineLink from 'components/Project/InlineLink';
 
-const SnowballGame: NextPage = () => {
+const VReactable: NextPage = () => {
   let data: ProjectArticle = {
-    id: 13,
+    id: 14,
     type: 'Side',
     title: 'Vreactable',
     description: `VReactable is an interface that serves as a bridge between the virtual reality (VR) realm and 
@@ -181,4 +181,4 @@ const SnowballGame: NextPage = () => {
   );
 };
 
-export default SnowballGame;
+export default VReactable;
