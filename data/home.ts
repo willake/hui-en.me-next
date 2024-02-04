@@ -19,6 +19,20 @@ export const homeData: HomeAPIData = {
   ],
   sideProjects: [
     {
+      id: 14,
+      route: 'wavefront-gpu-path-tracer',
+      title: 'Wavefront GPU Path Tracer',
+      previewImageUrl: 'images/projects/wavefront-gpu-path-tracer/cover.jpg',
+      tools: ['C++', 'GPU', 'Graphics'],
+    },
+    {
+      id: 14,
+      route: 'vreactable',
+      title: 'VReactable',
+      previewImageUrl: 'images/projects/vreactable/cover.png',
+      tools: ['Python', 'Resonite', 'Research'],
+    },
+    {
       id: 13,
       route: 'snowball-game',
       title: 'Snowball Game',
