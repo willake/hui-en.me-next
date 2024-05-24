@@ -4,7 +4,7 @@ export const aboutData: AboutAPIData = {
   intro: [
     `I am a communicative programmer with a great deal of experience in collaborating with people from different roles. 
         I can think from more than one perspective and make collaboration more efficient. 
-        As a programmer with professional experience in developing products with Unity for almost three years, 
+        As a programmer with professional experience in software development for almost three years, 
         I can implement many kinds of gameplay features by improving graphics, 
         designing code architecture, and optimizing games efficiently`,
     `Currently I am a master's student studying Game & Media Technology at Utrecht University, Netherlands.`,
