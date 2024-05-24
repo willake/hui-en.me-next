@@ -11,8 +11,9 @@ type Props = {
 };
 
 const PortfolioItem: React.FC<Props> = ({ meta }) => {
+  const url = meta.isExternal ? meta.route : `/projects/${meta.route}` 
   return (
-    <Link href={`/projects/${meta.route}`}>
+    <Link href={url} passHref={true}>
       <Card title={meta.title}>
         <CardBody>
           <Box css={{ width: '100%', zIndex: 5 }}>

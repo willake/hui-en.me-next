@@ -64,12 +64,6 @@ const HurlGame: NextPage = () => {
           width={347}
           height={195}
         />
-        <VideoBlock
-          title="Juice It or Lose It"
-          src="https://www.youtube.com/watch?v=Fy0aCDmgnxg"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        />
         <Heading level={2}>Introduction</Heading>
         <ImageBlock
           src="/images/projects/hurl-game/gifs/gameplay-1.gif"
