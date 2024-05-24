@@ -21,7 +21,15 @@ export const homeData: HomeAPIData = {
   ],
   sideProjects: [
     {
-      id: 14,
+      id: 16,
+      isExternal: true,
+      route: 'https://github.com/willake/hades-dark-zagreus-mod',
+      title: 'Dark Zagreus (Hades Mod)',
+      previewImageUrl: 'images/projects/dark-zagreus/cover.png',
+      tools: ['Lua', 'Mod', 'Deep Learning'],
+    },
+    {
+      id: 15,
       isExternal: true,
       route: 'https://github.com/willake/wavefront-gpu-path-tracer',
       title: 'Wavefront GPU Path Tracer',
