@@ -22,13 +22,15 @@ export const homeData: HomeAPIData = {
   sideProjects: [
     {
       id: 14,
-      route: 'wavefront-gpu-path-tracer',
+      isExternal: true,
+      route: 'https://github.com/willake/wavefront-gpu-path-tracer',
       title: 'Wavefront GPU Path Tracer',
       previewImageUrl: 'images/projects/wavefront-gpu-path-tracer/cover.jpg',
       tools: ['C++', 'GPU', 'Graphics'],
     },
     {
       id: 14,
+      isExternal: false,
       route: 'vreactable',
       title: 'VReactable',
       previewImageUrl: 'images/projects/vreactable/cover.png',
@@ -36,7 +38,8 @@ export const homeData: HomeAPIData = {
     },
     {
       id: 13,
-      route: 'snowball-game',
+      isExternal: true,
+      route: 'https://huienlin.itch.io/snowball-game',
       title: 'Snowball Game',
       previewImageUrl: 'images/projects/snowball-game/cover.jpg',
       tools: ['Unity', 'C#', 'Research'],
@@ -51,8 +54,8 @@ export const homeData: HomeAPIData = {
     },
     {
       id: 10,
-      isExternal: false,
-      route: 'teru-teru-beru',
+      isExternal: true,
+      route: 'https://huienlin.itch.io/teruteruberu',
       title: 'TeruTeruBeru',
       previewImageUrl: 'images/projects/teru-teru-beru/preview.jpg',
       tools: ['Unity', 'C#', 'Game Jam'],
