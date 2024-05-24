@@ -36,6 +36,7 @@ export type AboutAPIData = {
 
 export type ProjectMeta = {
   id: number;
+  isExternal: boolean,
   route: string;
   previewImageUrl: string;
   title: string;
