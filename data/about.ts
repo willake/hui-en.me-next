@@ -12,7 +12,7 @@ export const aboutData: AboutAPIData = {
   programmingSkill: [
     `C++`,
     `C#`,
-    `UE4 Blueprint`,
+    `UE4/UE5 Blueprint`,
     `GLSL`,
     `Git`,
     `SQL`,
