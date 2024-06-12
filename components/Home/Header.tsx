@@ -57,7 +57,7 @@ const Header: React.FC = () => {
               userSelect: 'none',
             }}
           >
-            Game Programmer
+            Programmer
           </H2>
         </OverlayTitle>
       </Content>

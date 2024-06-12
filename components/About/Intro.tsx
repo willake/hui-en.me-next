@@ -29,7 +29,7 @@ const Intro: React.FC<IntroProps> = ({ intro }) => {
       <Box>
         <Avatar>
           <Image
-            src="/images/about/me.jpg"
+            src="/images/about/me2.jpg"
             alt="me"
             width="160"
             height="160"

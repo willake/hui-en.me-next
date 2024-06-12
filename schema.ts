@@ -22,6 +22,7 @@ export type Education = {
   degree: string;
   school: string;
   period: string;
+  details: string[];
 };
 
 export type AboutAPIData = {
@@ -36,6 +37,7 @@ export type AboutAPIData = {
 
 export type ProjectMeta = {
   id: number;
+  isExternal: boolean,
   route: string;
   previewImageUrl: string;
   title: string;
