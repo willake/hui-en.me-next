@@ -104,7 +104,7 @@ const VReactable: NextPage = () => {
           height={330}
         />
         <Paragraph>
-          To track the objects, we use ArUco Marker in OpenCV's library. ArUco
+          To track the objects, we use ArUco Marker in OpenCV&apos;s library. ArUco
           markers represent a category of fiducial markers designed for easy
           recognition by computer vision systems. It is widely used in the field
           of pose recognition in robotics. These markers typically consist of

@@ -25,30 +25,48 @@ export const aboutData: AboutAPIData = {
     `Design Pattern`,
     `Object Oriented Programming`,
     `Data Oriented Programming`,
+    'UI Programming',
     `Desktop`,
     `Andorid/iOS`,
+    'MVVM',
+    'Data Structure / Algorithm'
   ],
   workExperience: [
     {
       title: `Unity Software Engineer`,
       subtitle: `Seekrtech, Taiwan, Jan. 2019 - June. 2021`,
       details: [
-        `Worked on a mobile to-do list app with gamification feature in a cross-functional team`,
-        `Implemented all game mechanics in C# with UniRx, designed code architecture and database schema`,
+        `Worked on a mobile game from scratch until released in a cross-functional team`,
+        `Take responsibility as the major Unity programmer.`,
+        `Implemented game mechanics in Unity C# with UniRx, designed architecture and database schema`,
+        `Executed project in agile framework, Scrum, scheduling work accurately`,
         `Defined art assets standard, developing level design and UI building tools, improving productivity`,
-        `Executed project in Scrum framework, scheduling work accurately`,
+        `Supported senior Android engineer for a product that impacts over 30 million users, developing new
+features, AB Testing with UI/UX designer, refactoring code base from Java to Kotlin, fixing bugs`
       ],
     },
     {
       title: `Front-End Engineer (Internship)`,
       subtitle: `Seekrtech, Taiwan, Jul. 2017 - Sep. 2017 / Jul. 2018 - Sep. 2018`,
       details: [
-        `Developed several websites for company and products with HTML, CSS, and JavaScript`,
-        `Refactored browser extension, developed new features, and connected server APIs, increasing number of 
-                users by 60,000`,
-        `Defined static website skeleton for future product webpages, reducing time for developing a new website`,
+        `Refactored and maintain a browser extension game, improving performance significantly`,
+        `Developed new features for the extension, increasing the number of users by 60,000`,
+        `Developed several websites for the company and products with web langauges, and frameworks`,
+        `Defined static website skeleton, significantly reducing time for developing a new website`,
+        ` Implemented new features for the company’s internal system as a full-stack developer, using Vue.js, Ruby
+on Rails, and PostgreSQL`,
       ],
     },
+    {
+      title: `Game Developer (Contract)`,
+      subtitle: `Pinka, Jan. 2016 - May. 2017`,
+      details: [
+        `Designed game mechanics with educational features to teach English vocabulary`,
+        `Implemented several significant gameplay features in C# with Unity, such as user input, UI, combat system, and map generation`,
+        `Won 1st place in educational digital media competition, which contained over 20 other projects from three
+                different universities eligible for rewards`,
+      ],
+    }
   ],
   projectExperience: [
     {
@@ -61,32 +79,30 @@ export const aboutData: AboutAPIData = {
         `Presented game at largest student exhibition in Taiwan, with over 80,000 people visiting`,
       ],
     },
-    {
-      title: `Game Developer (Contract)`,
-      subtitle: `Pinka, Jan. 2016 - May. 2017`,
-      details: [
-        `Designed game mechanics with educational features to teach English vocabulary`,
-        `Implemented several significant gameplay features in C# with Unity, such as user input, UI, combat system, and map generation`,
-        `Won 1st place in educational digital media competition, which contained over 20 other projects from three
-                different universities eligible for rewards`,
-      ],
-    },
   ],
   education: [
     {
       degree: `M.S. in Game & Media Technology`,
       school: `Utecht University, Netherlands`,
       period: `Sep. 2022 - Present`,
+      details: [
+        `Advanced programming techniques, specializing in optimizing performance effectively`,
+        `Acquired knowledge of neural networks, leveraging AI technology to enhance game development process`,
+        `Developed knowledge in computer graphics, including building a GPU ray tracer using C++`,
+        `Participated in a research project focused on VR development, utilizing Python to create tools`
+      ]
     },
     {
       degree: `B.A. in Information Comunication`,
       school: `Yuan Ze University, Taiwan`,
       period: `Sep. 2015 - Jul. 2018`,
-    },
-    {
-      degree: `B.A in Information Management`,
-      school: `Yuan Ze University, Taiwan`,
-      period: `Sep. 2013 - Jul. 2015`,
-    },
+      details: [
+        `Fundamental computer science, data structure, and algorithm`,
+        `Learned mobile app development using Android Studio for Andorid, and XCode for iOS`,
+        `Developed a variety of games throughout the academic program`,
+        `Specialized in gameplay and game AI programming, contributing significantly to the development and
+         enhancement of game mechanics and AI systems.`
+      ]
+    }
   ],
 };

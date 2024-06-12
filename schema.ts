@@ -22,6 +22,7 @@ export type Education = {
   degree: string;
   school: string;
   period: string;
+  details: string[];
 };
 
 export type AboutAPIData = {

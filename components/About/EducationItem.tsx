@@ -6,9 +6,10 @@ type Props = {
   degree: string;
   school: string;
   period: string;
+  details: string[];
 };
 
-const EducationItem: React.FC<Props> = ({ degree, school, period }) => {
+const EducationItem: React.FC<Props> = ({ degree, school, period, details }) => {
   return (
     <VFlex css={{ width: '100%', margin: '10px 20px', backgroundColor: WHITE }}>
       <Text
@@ -20,15 +21,28 @@ const EducationItem: React.FC<Props> = ({ degree, school, period }) => {
       </Text>
       <Text
         size={'m'}
-        textColor={'black'}
+        textColor={'green'}
         css={{
-          margin: '5px 5px 5px 10px',
+          margin: '5px 5px 10px 10px',
+          fontWeight: 700,
           letterSpacing: '0.5px',
-          lineHeight: 1.7,
         }}
       >
-        {`${school}, ${period}`}
+        {school}, {period}
       </Text>
+      <Box css={{ margin: '5px 5px 5px 10px' }}>
+        {details.map((detail) => (
+          <Text
+            key={detail.length}
+            size={'m'}
+            textColor={'black'}
+            css={{ letterSpacing: '0.5px', lineHeight: 1.7 }}
+          >
+            - {detail}
+            <br />
+          </Text>
+        ))}
+      </Box>
     </VFlex>
   );
 };
