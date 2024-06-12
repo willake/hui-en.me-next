@@ -18,22 +18,22 @@ export const homeData: HomeAPIData = {
       previewImageUrl: 'images/projects/forest-browser/preview.jpg',
       tools: ['Javascript'],
     },
-  ],
-  sideProjects: [
     {
       id: 16,
       isExternal: true,
-      route: 'https://github.com/willake/hades-dark-zagreus-mod',
+      route: 'https://www.nexusmods.com/hades/mods/191',
       title: 'Dark Zagreus (Hades Mod)',
-      previewImageUrl: 'images/projects/dark-zagreus/cover.png',
-      tools: ['Lua', 'Mod', 'Deep Learning'],
-    },
+      previewImageUrl: 'images/projects/dark-zagreus/cover.jpg',
+      tools: ['Lua', 'Deep Learning', 'Research'],
+    }
+  ],
+  sideProjects: [
     {
       id: 15,
       isExternal: true,
       route: 'https://github.com/willake/wavefront-gpu-path-tracer',
       title: 'Wavefront GPU Path Tracer',
-      previewImageUrl: 'images/projects/wavefront-gpu-path-tracer/cover.jpg',
+      previewImageUrl: 'images/projects/wavefront-gpu-path-tracer/cover-2.jpg',
       tools: ['C++', 'GPU', 'Graphics'],
     },
     {
@@ -58,7 +58,7 @@ export const homeData: HomeAPIData = {
       route: `https://huienlin.itch.io/fruit-am-i`,
       title: 'Fruit Am I',
       previewImageUrl: 'images/projects/fruit-am-i/preview.jpg',
-      tools: ['Unity', 'C#', 'Game Jam'],
+      tools: ['Unity', 'Game Jam', '6000 plays'],
     },
     {
       id: 10,

@@ -14,7 +14,7 @@ const EducationCategory: React.FC<Props> = ({ title, educations }) => {
       css={{
         width: '90%',
         '@lg': {
-          maxWidth: '1000px',
+          maxWidth: '1200px',
           flexDirection: 'row',
           alignItems: 'flex-start',
         },
@@ -27,20 +27,21 @@ const EducationCategory: React.FC<Props> = ({ title, educations }) => {
           margin: '20px 0px',
           fontWeight: 400,
           '@lg': {
-            flex: 1,
+            flex: 2,
             textAlign: 'left',
           },
         }}
       >
         {title}
       </H2>
-      <VFlexCenter css={{ width: '100%', '@lg': { flex: 2 } }}>
+      <VFlexCenter css={{ width: '100%', '@lg': { flex: 6 } }}>
         {educations.map((education) => (
           <EducationItem
             key={education.degree}
             degree={education.degree}
             school={education.school}
             period={education.period}
+            details={education.details}
           />
         ))}
       </VFlexCenter>
